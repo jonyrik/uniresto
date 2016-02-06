@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uniresto</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="css/09-style.css">
+  <link rel="stylesheet" href="css/style-global.css">
+ <link rel="stylesheet" href="css/toastr.css">
+  <link rel="stylesheet" href="css/foundation-datepicker.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/site.js"></script>
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" charset="utf-8"></script>
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" charset="utf-8"></script>
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-ui.js" charset="utf-8"></script>
+  <script charset="UTF-8" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+  <link rel="stylesheet" href="http://js.api.here.com/v3/3.0/mapsjs-ui.css" />    
+</head>
+
+<body class="reset store-view">
+  <nav class="top-bar nav-orange" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <a href="/">
+          <img src="img/logo.svg">
+        </a>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">           
+        <li class="has-dropdown">
+          <a href="#">Hola Pablo Par</a>
+          <ul class="dropdown">                    
+            <li><a href="/store/info/edit/">Editar comercio</a></li>
+            <li><a href="/store/orders/">Ver pedidos</a></li>                    
+            <li><a href="/accounts/password/change/">Cambiar contraseña</a></li>
+            <li><a href="/accounts/logout/">Cerrar sesión</a></li>
+          </ul>
+        </li>            
+      </ul>
+    </section>
+  </nav>
+
+  <main class="no-margin">
+
+<!--div class="row-fluid">
+    <div class="large-12 columns store-header"></div>
+  </div-->
+  <div class="row-fluid">
+    <div class="large-12 columns store-cover" style="">
+      <div class="row store-header-info">
+        <div class="store-logo columns">
+
+          <img src="img/beab57f22e19f905037ccac40141a03c.jpg" />
+
+        </div>
+        <div class="large-7 vbottom columns">
+          <h3 class="store-name">Maori <a data-tooltip href="/store/info/edit/" title="Haga clic para editar la información del comercio"><i class="fa fa-pencil"></i> Editar comercio</a></h3>
+          <h4 class="store-category subheader">Restaurante</h4>
+        </div>
+        <div class="large-3 vbottom text-right columns">
+          <span class="today-hour"><i class="fa fa-check-circle"></i>
+
+            Cerrado
+
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+  <div class="row store-dashboard">
+    <dl class="small-12 medium-3 columns">
+      <dt>Dirección</dt>
+      <dd>arenales 2893
+        <a href="#" id="mapReveal" data-reveal-id="mapContainer">
+          <img src="img/imgo.jpg" /></a>
+        </dd>
+      </dl>
+      <dl class="small-12 medium-2 columns">
+        <dt>Horario de hoy</dt>
+        <dd>
+
+          Cerrado
+
+        </dd>
+      </dl>
+      <dl class="small-12 medium-2 columns">
+        <dt>Mesas disponibles</dt>
+        <dd>-</dd>
+      </dl>
+      <dl class="small-12 medium-2 columns">
+        <dt>Plato del día</dt>
+        <dd>-</dd>
+      </dl>
+      <dl class="small-12 medium-3 columns end">
+        <dt>Delivery</dt>
+        
+        <dd>En este momento no se hacen envíos</dd>
+        
+      </dl>
+    </div>
+    -->
+    <div class="little-space">
+    </div>
+    <div ><div class="reveal-modal map-container" data-reveal aria-labelledby="modalTitle"
+      aria-hidden="true" role="dialog" id="mapContainer" >
+      <span id="modalHeader"></span>
+      <a class="close-reveal-modal" aria-label="Close">×</a>
+    </div>
+    <a name="map"></a>
+    <script>
+      var position = { lat: -34.550312, lng: -58.465078 };
+
+      var platform = new H.service.Platform({
+        'app_id': 'ewkuSKrA4OdvqtMld02o',
+        'app_code': '_471aSVedFlYjPWnESrbVg'
+      });
+
+// Obtain the default map types from the platform object:
+var defaultLayers = platform.createDefaultLayers();
+
+// Instantiate (and display) a map object:
+var map = new H.Map(
+  document.getElementById('mapContainer'),
+  defaultLayers.normal.map,
+  { zoom: 16, center: position });
+
+// MapEvents enables the event system
+var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+// Create the default UI:
+var ui = H.ui.UI.createDefault(map, defaultLayers, 'es-ES');
+
+if(typeof marker === 'undefined') {
+  marker = new H.map.Marker(position);
+}
+
+$(document).ready(function(ev) {
+  map.addObject(marker);
+});
+
+$('#mapReveal').on('click', function(ev) {
+  marker.draggable = false;
+  $('#modalHeader').html('<h9 id="modalTitle">arenales 2893, Buenos Aires, Argentina</h9>');
+});
+
+// When popup becomes visible, resize map in order to show
+$('#mapContainer').toggle( function () {
+  map.getViewPort().resize();
+});
+
+</script>
+</div>
+<div class="row">
+  <div class="medium-12 columns no-padding-left store-tab">
+    <ul class="tabs vertical">
+      <li class="tab-title active"><a href="/store/orders/"><i class="fa fa-shopping-cart"></i>Pedidos</a></li>
+      <li class="tab-title "><a href="#panel11"><i class="fa fa-bars fa-2"></i> Muro</a></li>
+      <li class="tab-title "><a href="/store/info/"><i class="fa fa-info-circle"></i> Datos del local</a></li>
+      <li class="tab-title "><a href="/store/products/"><i class="fa fa-cutlery"></i> Platos del local</a></li>
+      <!-- <li class="tab-title "><a href="/store/working/open/"><i class="fa fa-map"></i> Funcionamiento del local</a></li> -->
+      <li class="tab-title "><a href="/store/working/open_view/"><i class="fa fa-map"></i> Funcionamiento del local</a></li>
+      <li class="tab-title "><a href="#panel41"><i class="fa fa-calendar-check-o"></i> Disponibilidad de lugares</a></li>
+      <li class="tab-title "><a href="#panel41"><i class="fa fa-camera"></i> Fotos del local</a></li>
+      <li class="tab-title "><a href="/store/facilities/"><i class="fa fa-building"></i>Comodidades</a></li>
+    </ul>
+    <div class="tabs-content">
+      <div class="content active">
+
+        <div class="medium-9 large-9 columns">
+          <div class="tittle-pedidos medium-9 large-9 ">
+
+            <i class="hotel-bell">
+                <img src="img/hotel-bell.png">
+            </i>
+            <h3> <span>Tus Pedidos</span> </h3>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <a href="/store/products/step1/" class="button tiny round boton-naranja button-arrow-naranja">
+               RETIRAN EN EL LOCAL</a>
+              
+
+              <a href="/store/combo/step1/?type=combo" class="button tiny boton-naranja button-inactive-gray">
+                  PEDIDOS INTERNOS</a>
+
+              <a href="/store/combo/step1/?type=combo" class="button tiny boton-naranja button-inactive-gray">
+                  DELIVERY</a>                  
+               </div>
+
+              <!--<div id="demo"></div>-->
+              <div class="product_item"> 
+                <div class="controles">
+                    <a href="#" class="default_button">Día Hoy</a>
+                    <a href="#" class="default_button">Futuro</a>
+                    <a href="#" class="default_button">Archivados/Cancelado</a>
+                </div>
+                  <div class="row">
+                    <div class="columns small-12" >
+                      <ul class="accordion" data-accordion="">
+                          <li class="accordion-navigation active">
+                            
+                              <a href="#panelContact1a" class="link columns small-12" aria-expanded="true">ORDEN N° <span class="circulo-gris large-5 columns">45</span> del día 
+                                <div class="estado-controles">
+                                <span>Estado: </span>
+                                <input class="mod-pedido" type="button" value="Confirmar">
+                                <input class="mod-pedido" type="button" value="Rechazar">
+                                </div>
+                              </a> 
+                            
+                            <div id="panelContact1a" class="contenedor-articulo content active">
+                              <div class="chatContent"> 
+                                <article class="articulo-pedido columns small-12" >
+                                  <div class="img-art-pedido ">
+                                    <img src="img/55_7KJgCJM.jpg">
+                                  </div>
+                                  <div class="form-articulo-pedido columns small-10">
+                                    <h4><span class="title-articulo-pedido">Combo Mega</span></h4>
+                                    <h6><span class="detalle-articulo-pedido">Cantidad:  1</span></h6>
+                                    <h6><span class="detalle-articulo-pedido">Ingredientes seleccionados
+                                      <span class="ingrediente-articulo">Cebolla</span>
+                                      <span class="ingrediente-articulo">Jamón</span>
+                                      <span class="ingrediente-articulo">Queso</span>
+                                    </span></h6>
+
+                                  </div>  
+                                </article>
+                                <p class="columns small-2"></p><p class="columns small-10"></p>
+                                <article class="articulo-pedido columns small-12" >
+                                  <div class="img-art-pedido ">
+                                    <img src="img/55_7KJgCJM.jpg">
+                                  </div>
+                                  <div class="form-articulo-pedido columns small-10">
+                                    <h4><span class="title-articulo-pedido">Combo Mega</span></h4>
+                                    <h6><span class="detalle-articulo-pedido">Cantidad:  1</span></h6>
+                                    <h6><span class="detalle-articulo-pedido">Ingredientes seleccionados
+                                      <span class="ingrediente-articulo">Cebolla</span>
+                                      <span class="ingrediente-articulo">Jamón</span>
+                                      <span class="ingrediente-articulo">Queso</span>
+                                    </span></h6>
+
+                                  </div>  
+                                </article>                                
+                                
+                                <div class="footer-resumen-articulo" >
+                                  <div class="usuario-resum columns small-4">
+                                    <!--<span> Datos del usuario y la compra</span>-->
+                                    <div class="columns small-1">
+                                      <div class="foto-cliente">
+                                          <img src="img/fotoPerfil.jpg">
+                                      </div>
+                                    </div>                                    
+                                    <div class="text-cliente">
+                                      <span class="name">Andres Maldonado</span>
+                                      <span class="ubicacion"> Barrio de Agronomía</span>
+                                    </div>                                    
+                                  </div>
+                                  <div class="datos-entrega columns small-4">
+                                    <!--<div class="columns small-1">
+                                      <div class="foto-cliente">
+                                          <img src="img/fotoPerfil.jpg">
+                                      </div>
+                                    </div>-->
+                                    <div class="text-cliente">
+                                      <!--<span class="name">Andres Maldonado</span>
+                                      <span class="ubicacion"> Barrio de Agronomía</span>-->
+                                      <span class="titulo"> Retira 18:30 </span>
+                                    </div>  
+                                    <div class="columns">  
+                                        <a href="/store/orders/"><i class="fa fa-comment"></i> <span> Notificaciones </span></a>
+                                    </div>
+                                   
+                                  </div>
+                                  <div class="total columns small-4">
+                                    <div class="columns prec">  
+                                      <span class="total-titulo">TOTAL </span>  <span class="total-naranja"> $ 320</span>
+                                    </div>  
+                                    <div class="columns prec">  
+                                      <span class="sub-titulo">Paga Con:</span> <span class="item-total"> $ 200,00</span>
+                                    </div>  
+                                    <div class="columns prec">  
+                                      <span class="sub-titulo">Vuelto: </span> <span class="item-total"> $ 80,00</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="columns small-12">
+                                  <hr style="margin: 0 5px;">
+                                  <input class="aceptar-pedido columns small-5" type="button" value="Aceptar Pedido">
+                                  <input class="cancelar-pedido columns small-5" type="button" value="Cancelar Pedido">
+                                </div>
+                                                              
+                              </div>
+                            </div>
+                          </li>
+                          <li class="accordion-navigation ">
+                            
+                              <a href="#panelContact2a" class="link columns small-12" aria-expanded="true">ORDEN N° <span class="circulo-gris large-5 columns">44</span> del día 
+                                <div class="estado-controles">
+                                <span>Estado: </span>
+                                <input class="mod-pedido" type="button" value="Confirmar">
+                                <input class="mod-pedido" type="button" value="Rechazar">
+                                </div>
+                              </a> 
+                            
+                            <div id="panelContact2a" class="contenedor-articulo content ">
+                              <div class="chatContent"> 
+                                <article class="articulo-pedido columns small-12" >
+                                  <div class="img-art-pedido ">
+                                    <img src="img/55_7KJgCJM.jpg">
+                                  </div>
+                                  <div class="form-articulo-pedido columns small-10">
+                                    <h4><span class="title-articulo-pedido">Combo Mega</span></h4>
+                                    <h6><span class="detalle-articulo-pedido">Cantidad:  1</span></h6>
+                                    <h6><span class="detalle-articulo-pedido">Ingredientes seleccionados
+                                      <span class="ingrediente-articulo">Cebolla</span>
+                                      <span class="ingrediente-articulo">Jamón</span>
+                                      <span class="ingrediente-articulo">Queso</span>
+                                    </span></h6>
+
+                                  </div>  
+                                </article>
+                                <p class="columns small-2"></p><p class="columns small-10"></p>
+                                <article class="articulo-pedido columns small-12" >
+                                  <div class="img-art-pedido ">
+                                    <img src="img/55_7KJgCJM.jpg">
+                                  </div>
+                                  <div class="form-articulo-pedido columns small-10">
+                                    <h4><span class="title-articulo-pedido">Combo Mega</span></h4>
+                                    <h6><span class="detalle-articulo-pedido">Cantidad:  1</span></h6>
+                                    <h6><span class="detalle-articulo-pedido">Ingredientes seleccionados
+                                      <span class="ingrediente-articulo">Cebolla</span>
+                                      <span class="ingrediente-articulo">Jamón</span>
+                                      <span class="ingrediente-articulo">Queso</span>
+                                    </span></h6>
+
+                                  </div>  
+                                </article>                                
+                                
+                                <div class="footer-resumen-articulo" >
+                                  <div class="usuario-resum columns small-4">
+                                    <!--<span> Datos del usuario y la compra</span>-->
+                                    <div class="columns small-1">
+                                      <div class="foto-cliente">
+                                          <img src="img/fotoPerfil.jpg">
+                                      </div>
+                                    </div>                                    
+                                    <div class="text-cliente">
+                                      <span class="name">Andres Maldonado</span>
+                                      <span class="ubicacion"> Barrio de Agronomía</span>
+                                    </div>                                    
+                                  </div>
+                                  <div class="datos-entrega columns small-4">
+                                    <!--<div class="columns small-1">
+                                      <div class="foto-cliente">
+                                          <img src="img/fotoPerfil.jpg">
+                                      </div>
+                                    </div>-->
+                                    <div class="text-cliente">
+                                      <!--<span class="name">Andres Maldonado</span>
+                                      <span class="ubicacion"> Barrio de Agronomía</span>-->
+                                      <span class="titulo"> Retira 18:30 </span>
+                                    </div>  
+                                    <div class="columns">  
+                                        <a href="/store/orders/"><i class="fa fa-comment"></i> <span> Notificaciones </span></a>
+                                    </div>
+                                   
+                                  </div>
+                                  <div class="total columns small-4">
+                                    <div class="columns prec">  
+                                      <span class="total-titulo">TOTAL </span>  <span class="total-naranja"> $ 320</span>
+                                    </div>  
+                                    <div class="columns prec">  
+                                      <span class="sub-titulo">Paga Con:</span> <span class="item-total"> $ 200,00</span>
+                                    </div>  
+                                    <div class="columns prec">  
+                                      <span class="sub-titulo">Vuelto: </span> <span class="item-total"> $ 80,00</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="columns small-12">
+                                  <hr style="margin: 0 5px;">
+                                  <input class="aceptar-pedido columns small-5" type="button" value="Aceptar Pedido">
+                                  <input class="cancelar-pedido columns small-5" type="button" value="Cancelar Pedido">
+                                </div>
+                                                              
+                              </div>
+                            </div>
+                          </li>                          
+                          <li class="accordion-navigation ">
+                            
+                              <a href="#panelContact3a" class="link columns small-12" aria-expanded="true">ORDEN N° <span class="circulo-gris large-5 columns">43</span> del día 
+                                <div class="estado-controles">
+                                <span>Estado: </span>
+                                <input class="mod-pedido" type="button" value="Confirmar">
+                                <input class="mod-pedido" type="button" value="Rechazar">
+                                </div>
+                              </a> 
+                            
+                            <div id="panelContact3a" class="contenedor-articulo content ">
+                              <div class="chatContent"> 
+                                <article class="articulo-pedido columns small-12" >
+                                  <div class="img-art-pedido ">
+                                    <img src="img/55_7KJgCJM.jpg">
+                                  </div>
+                                  <div class="form-articulo-pedido columns small-10">
+                                    <h4><span class="title-articulo-pedido">Combo Mega</span></h4>
+                                    <h6><span class="detalle-articulo-pedido">Cantidad:  1</span></h6>
+                                    <h6><span class="detalle-articulo-pedido">Ingredientes seleccionados
+                                      <span class="ingrediente-articulo">Cebolla</span>
+                                      <span class="ingrediente-articulo">Jamón</span>
+                                      <span class="ingrediente-articulo">Queso</span>
+                                    </span></h6>
+
+                                  </div>  
+                                </article>
+                                <p class="columns small-2"></p><p class="columns small-10"></p>
+                                <article class="articulo-pedido columns small-12" >
+                                  <div class="img-art-pedido ">
+                                    <img src="img/55_7KJgCJM.jpg">
+                                  </div>
+                                  <div class="form-articulo-pedido columns small-10">
+                                    <h4><span class="title-articulo-pedido">Combo Mega</span></h4>
+                                    <h6><span class="detalle-articulo-pedido">Cantidad:  1</span></h6>
+                                    <h6><span class="detalle-articulo-pedido">Ingredientes seleccionados
+                                      <span class="ingrediente-articulo">Cebolla</span>
+                                      <span class="ingrediente-articulo">Jamón</span>
+                                      <span class="ingrediente-articulo">Queso</span>
+                                    </span></h6>
+
+                                  </div>  
+                                </article>                                
+                                
+                                <div class="footer-resumen-articulo" >
+                                  <div class="usuario-resum columns small-4">
+                                    <!--<span> Datos del usuario y la compra</span>-->
+                                    <div class="columns small-1">
+                                      <div class="foto-cliente">
+                                          <img src="img/fotoPerfil.jpg">
+                                      </div>
+                                    </div>                                    
+                                    <div class="text-cliente">
+                                      <span class="name">Andres Maldonado</span>
+                                      <span class="ubicacion"> Barrio de Agronomía</span>
+                                    </div>                                    
+                                  </div>
+                                  <div class="datos-entrega columns small-4">
+                                    <!--<div class="columns small-1">
+                                      <div class="foto-cliente">
+                                          <img src="img/fotoPerfil.jpg">
+                                      </div>
+                                    </div>-->
+                                    <div class="text-cliente">
+                                      <!--<span class="name">Andres Maldonado</span>
+                                      <span class="ubicacion"> Barrio de Agronomía</span>-->
+                                      <span class="titulo"> Retira 18:30 </span>
+                                    </div>  
+                                    <div class="columns">  
+                                        <a href="/store/orders/"><i class="fa fa-comment"></i> <span> Notificaciones </span></a>
+                                    </div>
+                                   
+                                  </div>
+                                  <div class="total columns small-4">
+                                    <div class="columns prec">  
+                                      <span class="total-titulo">TOTAL </span>  <span class="total-naranja"> $ 320</span>
+                                    </div>  
+                                    <div class="columns prec">  
+                                      <span class="sub-titulo">Paga Con:</span> <span class="item-total"> $ 200,00</span>
+                                    </div>  
+                                    <div class="columns prec">  
+                                      <span class="sub-titulo">Vuelto: </span> <span class="item-total"> $ 80,00</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="columns small-12">
+                                  <hr style="margin: 0 5px;">
+                                  <input class="aceptar-pedido columns small-5" type="button" value="Aceptar Pedido">
+                                  <input class="cancelar-pedido columns small-5" type="button" value="Cancelar Pedido">
+                                </div>
+                                                              
+                              </div>
+                            </div>
+                          </li>                          
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+             </div>
+
+
+
+
+
+          <br/>
+          <div class="pagination-centered">
+            <span class="page-links">
+              <ul class="pagination" role="menubar" aria-label="Pagination">
+
+                <li class="current">
+                  <span class="page-current">
+                    Página 1 de 1.
+                  </span>
+                </li>
+
+              </ul>
+            </span>
+          </div>
+        </div>
+        <script>    
+          $( document ).ready(function() {
+            $("[data-delete-product]").on("click", function(event) {      
+              var product = $(this);
+              var product_name = $(this).attr('data-product-name');
+              openConfirmModal('Desea eliminar el producto ' + product_name + '?', function(){
+                location = product.attr('href');
+              });
+
+              event.preventDefault();
+
+            }); 
+            $("[data-status-product]").on("click", function(event) {
+
+              var product = $(this);
+              var product_name = $(this).attr('data-product-name');
+              var product_status = $(this).attr('data-status-product');
+
+              openConfirmModal('Desea ' + product_status  +' el producto ' + product_name + '?', function(){
+                location = product.attr('href');
+              });
+
+              event.preventDefault();
+
+            }); 
+
+          });
+
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .store-cover {
+    background: url('img/banner-default.jpg') center center no-repeat;
+  }
+</style>
+
+</main>
+<script src="js/modernizr.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/foundation-datepicker.min.js"></script>
+<script src="js/jquery.autocomplete.min.js"></script>
+<script src="js/toastr.js"></script>
+
+
+<div id="mdl-confirm" class="reveal-modal small" data-reveal aria-labelledby="ing-title" aria-hidden="true" role="dialog">
+  <h4 id="ing-title">Confirmación</h4>
+  <p></p>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+  <a href="#" class="button" id="alert-cancel">Cancel</a>
+  <a href="#" class="button alert" id="alert-ok">Ok</a>
+</div>
+<script>
+  $(document).foundation();
+   $(".accordion").on("click", "dd", function (event) {
+  $("dd.active").slideToggle("slow");
+  $(this).find(".content").slideToggle("slow");
+});
+</script>
+
+</body>
+</html>
