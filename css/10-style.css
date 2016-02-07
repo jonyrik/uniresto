@@ -1994,6 +1994,7 @@ ul.ingredients-list li:before {
 .finalizar-pedido .articulo-pedido .img-art-pedido {
   display: table;
   width: 25%;
+  height: 25%;
   float: none;
 }
 .finalizar-pedido article > div:nth-child(2) {
