@@ -31,7 +31,55 @@ a {
   font-size: 0.9rem;
   line-height: 2.7;
 }
-.datos-local .accordion li.accordion-navigation {
+
+.config-gen-local .large-12.flex {
+  flex-wrap: wrap;
+}
+
+.config-gen-local h2 {
+  background: rgba(213, 221, 242, 0.54);
+  text-transform: uppercase;
+  border: 2px solid #D5DDF2;
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding: 0.5em 1em;
+}
+
+.config-gen-local .cont-panel {
+  margin-right: 20px;
+}
+.config-gen-local .cont-panel:nth-child(2), .config-gen-local .cont-panel:nth-child(4) {
+  margin-right: 0;
+}
+
+.config-gen-local .cont-panel.large-6 {
+  width: 48%;
+}
+
+.config-gen-local .panel .tit {
+    margin: 0px 10px;
+    font-size: 0.8rem;
+    line-height: 2;
+    width: 100%;
+}
+.config-gen-local .panel .row.flex {
+  width: 100%;
+}
+
+.config-gen-local .panel label {
+  font-size: 0.8rem;
+  line-height: 2;
+}
+.config-gen-local .panel input[type="text"] {
+    border: none;
+    background: #EBF0FD;
+    width: 38px;
+    height: 25px;
+    margin: 0 0 8px 5px;
+    box-shadow: none;
+}
+
+.datos-local .accordion li.accordion-navigation, .config-gen-local .accordion li.accordion-navigation {
   margin-bottom: 20px !important;
 }
 .datos-local .accordion-navigation > a {
@@ -2474,6 +2522,14 @@ ul.ingredients-list li:before {
   }
   }
 
+@media (max-width: 768px) {
+  .config-gen-local .cont-panel.large-6 {
+    width: auto;
+  }
+  .config-gen-local .cont-panel {
+    margin-right: 0;
+  }
+}
 
 @media (min-width: 1360px) {
 
