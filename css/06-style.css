@@ -508,12 +508,12 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
     padding: 1.2em;
     margin: 0em 0px 0;
 }
-.single.historias .box {
+.single.historias .box, .fotos-local .box {
     padding: 3em;
     display: table;
     width: 100%;
 }
-.single.historias .box.bgWh { display: block; }
+.single.historias .box.bgWh, .fotos-local .box.bgWh { display: block; }
 
 .historias .box .content { position: relative; }
 /*.historias .large-4 .row:last-child .box {
@@ -524,7 +524,7 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
     padding: 0;
     margin-right: 1em;
 }
-.single.historias .box .picProfWp{
+.single.historias .box .picProfWp, .fotos-local .box .picProfWp{
   width: auto;
 }
 
@@ -875,11 +875,11 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
   float: left;
   margin: 0;
 }
-.single.historias .crear-galeria .default_button, .single.historias .sel-portada .default_button {
+.single.historias .crear-galeria .default_button, .single.historias .sel-portada .default_button, .fotos-local .crear-galeria .default_button, .fotos-local .sel-portada .default_button {
   float: right;
   margin: 0;
 }
-.single.historias .crear-galeria h3 {
+.single.historias .crear-galeria h3, .fotos-local .crear-galeria h3 {
   display: inline-table;
   width: 100%;
   font-size: 0.9rem;
@@ -887,24 +887,24 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
   border-bottom: solid thin #eff3fe;
   padding-bottom: 10px;
 }
-.single.historias .crear-galeria ul.fotos-sel {
+.single.historias .crear-galeria ul.fotos-sel, .fotos-local .crear-galeria ul.fotos-sel {
   list-style: none;
   margin: 0;
   display: flex;
 }
-.single.historias .crear-galeria ul.fotos-sel li {
+.single.historias .crear-galeria ul.fotos-sel li, .fotos-local .crear-galeria ul.fotos-sel li {
   width: 16%;
   margin-right: 1rem;
   border-radius: 16%;
   position: relative;
 }
-.single.historias .crear-galeria ul.fotos-sel li.c {
+.single.historias .crear-galeria ul.fotos-sel li.c, .fotos-local .crear-galeria ul.fotos-sel li.c {
   background: #eff3fe;
 }
-.single.historias .crear-galeria ul.fotos-sel li img {
+.single.historias .crear-galeria ul.fotos-sel li img, .fotos-local .crear-galeria ul.fotos-sel li img {
   border-radius: 16%;
 }
-.single.historias .crear-galeria ul.fotos-sel li .boton.cruz {
+.single.historias .crear-galeria ul.fotos-sel li .boton.cruz, .fotos-local .crear-galeria ul.fotos-sel li .boton.cruz {
   position: absolute;
   top: 5px;
   right: 5px;
@@ -914,10 +914,10 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
   overflow: hidden;
   transition: ease 0.25s;
 }
-.single.historias .crear-galeria ul.fotos-sel li .boton.cruz:hover {
+.single.historias .crear-galeria ul.fotos-sel li .boton.cruz:hover, .fotos-local .crear-galeria ul.fotos-sel li .boton.cruz:hover {
   background: rgba(255, 255, 255, 0.8);
 }
-.single.historias .crear-galeria ul.fotos-sel li .cargar progress {
+.single.historias .crear-galeria ul.fotos-sel li .cargar progress, .fotos-local .crear-galeria ul.fotos-sel li .cargar progress {
     width: 80%;
     vertical-align: 0em;
     border: none;
@@ -936,13 +936,13 @@ progress::-moz-progress-bar {
     background-color: #FF900B;
 }
 
-.single.historias .crear-galeria ul.fotos-sel li .cargar p, .single.historias .sel-portada .cargar p {
+.single.historias .crear-galeria ul.fotos-sel li .cargar p, .single.historias .sel-portada .cargar p, .fotos-local .crear-galeria ul.fotos-sel li .cargar p, .fotos-local .sel-portada .cargar p {
     margin: 5px 0 0;
     line-height: 1;
     text-align: center;
     color: #94a5bf;
 }
-.single.historias .crear-galeria ul.fotos-sel li .nom-archivo {
+.single.historias .crear-galeria ul.fotos-sel li .nom-archivo, .fotos-local .crear-galeria ul.fotos-sel li .nom-archivo {
     position: absolute;
     margin: 0px 0 0 5px;
     bottom: -35px;
@@ -951,7 +951,7 @@ progress::-moz-progress-bar {
 .single.historias .sel-portada {
   margin-top: 100px;
 }
-.single.historias .sel-portada .cargar {
+.single.historias .sel-portada .cargar, .fotos-local .sel-portada .cargar {
   width: 100%;
   display: inline-table;
   background: #eff3fe;
@@ -959,7 +959,7 @@ progress::-moz-progress-bar {
   height: 185px;
   margin-top: 30px;
 }
-.single.historias .sel-portada .cargar progress {
+.single.historias .sel-portada .cargar progress, .fotos-local .sel-portada .cargar progress {
     margin: 12% auto 0;
     width: 20%;
     vertical-align: 0em;
@@ -1416,6 +1416,22 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
     width: 100%;
   }
 
+  /* sección fotos local */
+  .fotos-local .box.bgWh div.crear-galeria:last-child {
+    height: auto;
+  }
+
+  .fotos-local .cont-logo.crear-galeria ul.fotos-sel {
+    display: flex;
+  }
+  .fotos-local .cont-logo.crear-galeria ul.fotos-sel li {
+    margin-bottom: 0;
+  }
+  .fotos-local .cont-logo.crear-galeria ul.fotos-sel li.c {
+    height: 100px;
+    width: 20%;
+  }
+
 /* secciÃƒÂ³n historias */
 
   .tabs-content.historias {
@@ -1441,15 +1457,15 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
     width: 94%;
   }
 
-  .single.historias .crear-galeria ul.fotos-sel {
+  .single.historias .crear-galeria ul.fotos-sel, .fotos-local .crear-galeria ul.fotos-sel {
     display: block;
   }
-  .single.historias .crear-galeria ul.fotos-sel li {
+  .single.historias .crear-galeria ul.fotos-sel li, .fotos-local .crear-galeria ul.fotos-sel li {
     width: 30%;
     display: inline-block;
     margin-bottom: 45px;
   }
-  .single.historias .crear-galeria ul.fotos-sel li.c {
+  .single.historias .crear-galeria ul.fotos-sel li.c, .fotos-local .crear-galeria ul.fotos-sel li.c {
     height: 175px;
   }
 
@@ -1465,6 +1481,13 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
 
 @media (max-width: 850px) {
 
+  /* sección fotos local */
+
+  .fotos-local .sel-portada .cargar progress {
+      margin: 20% auto 0;
+      width: 35%;
+  }
+
   /* secciÃƒÂ³n historias */
 
   .single.historias .comentarios .box .datos {
@@ -1477,18 +1500,18 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
       margin-top: 4px;
   }
 
-  .single.historias .crear-galeria ul.fotos-sel li {
+  .single.historias .crear-galeria ul.fotos-sel li, .fotos-local .crear-galeria ul.fotos-sel li {
       width: 100%;
       display: block;
   }
-  .single.historias .crear-galeria ul.fotos-sel li .boton.cruz {
+  .single.historias .crear-galeria ul.fotos-sel li .boton.cruz, .fotos-local .crear-galeria ul.fotos-sel li .boton.cruz {
     top: 15px;
     right: 15px;
   }
-  .single.historias .crear-galeria ul.fotos-sel li.c {
+  .single.historias .crear-galeria ul.fotos-sel li.c, .fotos-local .crear-galeria ul.fotos-sel li.c {
     height: 264px;
   }
-  .single.historias .crear-galeria ul.fotos-sel li .cargar progress {
+  .single.historias .crear-galeria ul.fotos-sel li .cargar progress, .fotos-local .crear-galeria ul.fotos-sel li .cargar progress {
       margin: 45% 10% 0;
       display: inline;
   }
@@ -1504,6 +1527,12 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
 
 @media (max-width: 768px) {
 
+  /* sección fotos local */
+  .fotos-local .crear-galeria ul.fotos-sel li.c {
+      height: 400px;
+  }
+
+  /* sección single historias */
   .single.historias .box .datos .autor {
     float: none;
   }
@@ -1512,7 +1541,7 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
     margin-top: 30px;
   }
 
-  .single.historias .crear-galeria ul.fotos-sel li .boton.cruz {
+  .single.historias .crear-galeria ul.fotos-sel li .boton.cruz, .fotos-local .crear-galeria ul.fotos-sel li .boton.cruz {
       top: 30px;
       right: 30px;
   }
@@ -1606,6 +1635,11 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
 /*================================================ MAX-WIDTH: 320px  =======================================================*/
 
 @media (max-width: 425px) {
+
+    /* Sección fotos local */
+    .fotos-local .crear-galeria ul.fotos-sel li.c {
+        height: 265px;
+    }
 
     /* Seccion historias */
     .single.historias .comentarios .box .datos {
