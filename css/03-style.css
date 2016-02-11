@@ -281,11 +281,11 @@ a {
 }
 
 .on-off.endis.on, .on-off.endis.on i {
-  color: #00A508;
+  color: #077000;
 }
 
 .on-off.endis.off, .on-off.endis.off i{
-  color: #CA1B1B;
+  color: #ED0707;
 }
 
 /* fin Datos Local */
