@@ -119,9 +119,13 @@ a {
 
 .config-gen-local .panel .tit {
     margin: 0px 10px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    color: #484848;
     line-height: 2;
     width: 100%;
+}
+.config-gen-local .panel .tit.max-dis {
+  line-height: 1.1;
 }
 .config-gen-local .panel .row.flex {
   width: 100%;

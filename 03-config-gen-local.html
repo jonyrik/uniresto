@@ -18,6 +18,13 @@
   <script src="http://js.api.here.com/v3/3.0/mapsjs-ui.js" charset="utf-8"></script>
   <script charset="UTF-8" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
   <link rel="stylesheet" href="http://js.api.here.com/v3/3.0/mapsjs-ui.css" />
+
+  <!-- Toggle button -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="js/supertoggle.js"></script>
+
 </head>
 <body class="reset store-view">
   <nav class="top-bar top-bar-nav" data-topbar role="navigation">
@@ -209,9 +216,16 @@
                                         Órdenes en el local:
                                       </div>
                                       <div>
-                                        <a href="#" data-product-name="efectivo" data-status-product="desactivar" title="Desactivar producto">
-                                         <i class="fa fa-toggle-on fa-2x"></i>
-                                       </a>
+                                        <button class="on-off endis ord-local"></button>
+                                          <script type="text/javascript">
+                                      		$(".on-off.endis.ord-local").supertoggle({
+                                      			onVal: 1,
+                                      			onContent: "<i class='fa fa-circle'></i> Si",
+                                      			offVal: 0,
+                                      			offContent: "<i class='fa fa-circle'></i> No",
+                                      			defaultState: false,
+                                      		});
+                                      		</script>
                                       </div>
                                     </div>
 
@@ -220,9 +234,16 @@
                                         Entregas a domicilio:
                                       </div>
                                       <div>
-                                        <a href="#" data-product-name="efectivo" data-status-product="desactivar" title="Desactivar producto">
-                                         <i class="fa fa-toggle-on fa-2x"></i>
-                                       </a>
+                                        <button class="on-off endis domi"></button>
+                                          <script type="text/javascript">
+                                      		$(".on-off.endis.domi").supertoggle({
+                                      			onVal: 1,
+                                      			onContent: "<i class='fa fa-circle'></i> On",
+                                      			offVal: 0,
+                                      			offContent: "<i class='fa fa-circle'></i> Off",
+                                      			defaultState: true,
+                                      		});
+                                      		</script>
                                       </div>
                                     </div>
 
@@ -236,7 +257,7 @@
                                     </div>
 
                                     <div class="row columns flex">
-                                      <div class="tit">
+                                      <div class="tit max-dis">
                                         Máxima distancia de delivery:
                                       </div>
                                       <div class="flex">
@@ -259,9 +280,16 @@
                                       Opción genérica 1:
                                     </div>
                                     <div>
-                                      <a href="#" data-product-name="efectivo" data-status-product="desactivar" title="Desactivar producto">
-                                       <i class="fa fa-toggle-on fa-2x"></i>
-                                     </a>
+                                      <button class="on-off endis"></button>
+                                        <script type="text/javascript">
+                                    		$(".on-off.endis").supertoggle({
+                                    			onVal: 1,
+                                    			onContent: "<i class='fa fa-circle'></i> On",
+                                    			offVal: 0,
+                                    			offContent: "<i class='fa fa-circle'></i> Off",
+                                    			defaultState: false,
+                                    		});
+                                    		</script>
                                     </div>
                                   </div>
 
@@ -270,9 +298,16 @@
                                       Opción genérica 2:
                                     </div>
                                     <div>
-                                      <a href="#" data-product-name="efectivo" data-status-product="desactivar" title="Desactivar producto">
-                                       <i class="fa fa-toggle-on fa-2x"></i>
-                                     </a>
+                                      <button class="on-off endis"></button>
+                                        <script type="text/javascript">
+                                    		$(".on-off.endis").supertoggle({
+                                    			onVal: 1,
+                                    			onContent: "<i class='fa fa-circle'></i> On",
+                                    			offVal: 0,
+                                    			offContent: "<i class='fa fa-circle'></i> Off",
+                                    			defaultState: false,
+                                    		});
+                                    		</script>
                                     </div>
                                   </div>
 
@@ -281,9 +316,16 @@
                                       Opción genérica 3:
                                     </div>
                                     <div>
-                                      <a href="#" data-product-name="efectivo" data-status-product="desactivar" title="Desactivar producto">
-                                       <i class="fa fa-toggle-on fa-2x"></i>
-                                     </a>
+                                      <button class="on-off endis"></button>
+                                        <script type="text/javascript">
+                                    		$(".on-off.endis").supertoggle({
+                                    			onVal: 1,
+                                    			onContent: "<i class='fa fa-circle'></i> On",
+                                    			offVal: 0,
+                                    			offContent: "<i class='fa fa-circle'></i> Off",
+                                    			defaultState: false,
+                                    		});
+                                    		</script>
                                     </div>
                                   </div>
 
@@ -305,9 +347,16 @@
                                     Administrado por el local:
                                   </div>
                                   <div>
-                                    <a href="#" data-product-name="efectivo" data-status-product="desactivar" title="Desactivar producto">
-                                     <i class="fa fa-toggle-on fa-2x"></i>
-                                   </a>
+                                    <button class="on-off endis adlocal"></button>
+                                      <script type="text/javascript">
+                                      $(".on-off.endis.adlocal").supertoggle({
+                                        onVal: 1,
+                                        onContent: "<i class='fa fa-circle'></i> On",
+                                        offVal: 0,
+                                        offContent: "<i class='fa fa-circle'></i> Off",
+                                        defaultState: true,
+                                      });
+                                      </script>
                                   </div>
                                 </div>
 
@@ -316,9 +365,16 @@
                                     Abierto al público:
                                   </div>
                                   <div>
-                                    <a href="#" data-product-name="efectivo" data-status-product="desactivar" title="Desactivar producto">
-                                     <i class="fa fa-toggle-on fa-2x"></i>
-                                   </a>
+                                    <button class="on-off endis abpub"></button>
+                                      <script type="text/javascript">
+                                      $(".on-off.endis.abpub").supertoggle({
+                                        onVal: 1,
+                                        onContent: "<i class='fa fa-circle'></i> On",
+                                        offVal: 0,
+                                        offContent: "<i class='fa fa-circle'></i> Off",
+                                        defaultState: true,
+                                      });
+                                      </script>
                                   </div>
                                 </div>
 
@@ -327,9 +383,16 @@
                                     Permitir comentarios:
                                   </div>
                                   <div>
-                                    <a href="#" data-product-name="efectivo" data-status-product="desactivar" title="Desactivar producto">
-                                     <i class="fa fa-toggle-on fa-2x"></i>
-                                   </a>
+                                    <button class="on-off endis comm"></button>
+                                      <script type="text/javascript">
+                                      $(".on-off.endis.comm").supertoggle({
+                                        onVal: 1,
+                                        onContent: "<i class='fa fa-circle'></i> On",
+                                        offVal: 0,
+                                        offContent: "<i class='fa fa-circle'></i> Off",
+                                        defaultState: false,
+                                      });
+                                      </script>
                                   </div>
                                 </div>
 
@@ -348,9 +411,16 @@
                                 Opción genérica 1:
                               </div>
                               <div>
-                                <a href="#" data-product-name="efectivo" data-status-product="desactivar" title="Desactivar producto">
-                                 <i class="fa fa-toggle-on fa-2x"></i>
-                               </a>
+                                <button class="on-off endis"></button>
+                                  <script type="text/javascript">
+                                  $(".on-off.endis").supertoggle({
+                                    onVal: 1,
+                                    onContent: "<i class='fa fa-circle'></i> On",
+                                    offVal: 0,
+                                    offContent: "<i class='fa fa-circle'></i> Off",
+                                    defaultState: false,
+                                  });
+                                  </script>
                               </div>
                             </div>
 
@@ -359,9 +429,16 @@
                                 Opción genérica 2:
                               </div>
                               <div>
-                                <a href="#" data-product-name="efectivo" data-status-product="desactivar" title="Desactivar producto">
-                                 <i class="fa fa-toggle-on fa-2x"></i>
-                               </a>
+                                <button class="on-off endis"></button>
+                                  <script type="text/javascript">
+                                  $(".on-off.endis").supertoggle({
+                                    onVal: 1,
+                                    onContent: "<i class='fa fa-circle'></i> On",
+                                    offVal: 0,
+                                    offContent: "<i class='fa fa-circle'></i> Off",
+                                    defaultState: false,
+                                  });
+                                  </script>
                               </div>
                             </div>
 
@@ -387,7 +464,7 @@
                         </div> <!-- row -->
           </div>
         </div> <!-- panel -->
-        
+
           </div> <!-- cont-panel -->
 
 
