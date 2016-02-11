@@ -18,6 +18,13 @@
   <script src="http://js.api.here.com/v3/3.0/mapsjs-ui.js" charset="utf-8"></script>
   <script charset="UTF-8" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
   <link rel="stylesheet" href="http://js.api.here.com/v3/3.0/mapsjs-ui.css" />
+
+  <!-- Toggle button -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="js/supertoggle.js"></script>
+
 </head>
 <body class="reset store-view">
   <nav class="top-bar top-bar-nav" data-topbar role="navigation">
@@ -346,13 +353,20 @@
                                       Efectivo
                                     </div>
                                     <div>
-                                      <a href="#" data-product-name="efectivo" data-status-product="desactivar" title="Desactivar producto">
-                                       <i class="fa fa-toggle-on fa-2x"></i>
-                                     </a>
+                                      <button class="on-off endis efec"></button>
+                                        <script type="text/javascript">
+                                    		$(".on-off.endis.efec").supertoggle({
+                                    			onVal: 1,
+                                    			onContent: "<i class='fa fa-circle'></i> On",
+                                    			offVal: 0,
+                                    			offContent: "<i class='fa fa-circle'></i> Off",
+                                    			defaultState: true,
+                                    		});
+                                    		</script>
                                     </div>
                                   </div>
 
-                                  <div class="row columns flex">
+                                  <div class="row columns flex cred">
                                     <div class="icn">
                                       <img src="img/icono.jpg" />
                                     </div>
@@ -360,9 +374,16 @@
                                       Tarjetas de crédito
                                     </div>
                                     <div>
-                                      <a href="#" data-product-name="efectivo" data-status-product="desactivar" title="Desactivar producto">
-                                       <i class="fa fa-toggle-on fa-2x"></i>
-                                     </a>
+                                      <button class="on-off endis cred"></button>
+                                        <script type="text/javascript">
+                                    		$(".on-off.endis.cred").supertoggle({
+                                    			onVal: 1,
+                                    			onContent: "<i class='fa fa-circle'></i> On",
+                                    			offVal: 0,
+                                    			offContent: "<i class='fa fa-circle'></i> Off",
+                                    			defaultState: false,
+                                    		});
+                                    		</script>
                                     </div>
                                   </div>
 
@@ -387,7 +408,7 @@
                                       <div class="icn">
                                         <i class="fa fa-cc-amex"></i>
                                       </div>
-                                      <div class="tit">
+                                      <div class="tit american">
                                         American Express
                                       </div>
                                     </div>
@@ -413,9 +434,16 @@
                                       Tarjetas de débito
                                     </div>
                                     <div>
-                                      <a href="#" data-product-name="efectivo" data-status-product="desactivar" title="Desactivar producto">
-                                       <i class="fa fa-toggle-on fa-2x"></i>
-                                     </a>
+                                      <button class="on-off endis deb"></button>
+                                        <script type="text/javascript">
+                                    		$(".on-off.endis.deb").supertoggle({
+                                    			onVal: 1,
+                                    			onContent: "<i class='fa fa-circle'></i> On",
+                                    			offVal: 0,
+                                    			offContent: "<i class='fa fa-circle'></i> Off",
+                                    			defaultState: true,
+                                    		});
+                                    		</script>
                                     </div>
                                   </div>
 
@@ -440,7 +468,7 @@
                                       <div class="icn">
                                         <i class="fa fa-cc-amex"></i>
                                       </div>
-                                      <div class="tit">
+                                      <div class="tit american">
                                         American Express
                                       </div>
                                     </div>
@@ -472,9 +500,16 @@
                                       Efectivo
                                     </div>
                                     <div>
-                                      <a href="#" data-product-name="efectivo" data-status-product="desactivar" title="Desactivar producto">
-                                       <i class="fa fa-toggle-on fa-2x"></i>
-                                     </a>
+                                      <button class="on-off endis delefec"></button>
+                                        <script type="text/javascript">
+                                    		$(".on-off.endis.delefec").supertoggle({
+                                    			onVal: 1,
+                                    			onContent: "<i class='fa fa-circle'></i> On",
+                                    			offVal: 0,
+                                    			offContent: "<i class='fa fa-circle'></i> Off",
+                                    			defaultState: true,
+                                    		});
+                                    		</script>
                                     </div>
                                   </div>
 
@@ -486,9 +521,16 @@
                                       Tarjetas de crédito
                                     </div>
                                     <div>
-                                      <a href="#" data-product-name="efectivo" data-status-product="desactivar" title="Desactivar producto">
-                                       <i class="fa fa-toggle-on fa-2x"></i>
-                                     </a>
+                                      <button class="on-off endis delcred"></button>
+                                        <script type="text/javascript">
+                                    		$(".on-off.endis.delcred").supertoggle({
+                                    			onVal: 1,
+                                    			onContent: "<i class='fa fa-circle'></i> On",
+                                    			offVal: 0,
+                                    			offContent: "<i class='fa fa-circle'></i> Off",
+                                    			defaultState: true,
+                                    		});
+                                    		</script>
                                     </div>
                                   </div>
 
@@ -500,9 +542,16 @@
                                       Tarjetas de débito
                                     </div>
                                     <div>
-                                      <a href="#" data-product-name="efectivo" data-status-product="desactivar" title="Desactivar producto">
-                                       <i class="fa fa-toggle-on fa-2x"></i>
-                                     </a>
+                                      <button class="on-off endis deldeb"></button>
+                                        <script type="text/javascript">
+                                    		$(".on-off.endis.deldeb").supertoggle({
+                                    			onVal: 1,
+                                    			onContent: "<i class='fa fa-circle'></i> On",
+                                    			offVal: 0,
+                                    			offContent: "<i class='fa fa-circle'></i> Off",
+                                    			defaultState: false,
+                                    		});
+                                    		</script>
                                     </div>
                                   </div>
 
@@ -527,7 +576,7 @@
                                       <div class="icn">
                                         <i class="fa fa-cc-amex"></i>
                                       </div>
-                                      <div class="tit">
+                                      <div class="tit american">
                                         American Express
                                       </div>
                                     </div>
