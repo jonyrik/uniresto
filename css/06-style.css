@@ -1665,3 +1665,19 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
     }
 
 }
+
+@media (max-width: 400px) {
+
+    /* Sección fotos local */
+    .fotos-local .crear-galeria ul.fotos-sel li.c {
+        height: 195px;
+    }
+
+    .fotos-local .cont-logo.crear-galeria ul.fotos-sel li.c {
+      padding: 90px 0;
+  }
+  .fotos-local .sel-portada .cargar progress {
+    margin: 45% auto 0px;
+  }
+
+}
