@@ -2136,6 +2136,12 @@ ul.ingredients-list li:before {
 
 }
 
+@media (max-width: 400px) {
+  .flex .col3 {
+    display: block;
+  }
+}
+
 
 @media (min-width: 1024px) {
   .shop_main-data .local-detalle:last-child {
