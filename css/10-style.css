@@ -1,7 +1,27 @@
+input[type="checkbox"] {
+    visibility: hidden;
+}
+input[type="checkbox"]:checked::after {
+    background: #ED0707;
+    border: 0;
+}
+input[type="checkbox"]::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 0;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background: white;
+    visibility: visible;
+}
+
 label {
   cursor: default;
   color: #777;
   display: table;
+  font-size: 0.9rem;
 }
 
 table {
@@ -17,6 +37,10 @@ table thead tr th {
 }
 table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), table tr th:nth-child(3) {
   text-align: center;
+}
+
+.boton-naranja {
+  font-weight: bold;
 }
 
 .panel.callout a:hover:not(.button), .panel.callout a:focus:not(.button) {
@@ -293,11 +317,18 @@ table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), ta
 
 .elegir-producto .panel.callout, .elegir-producto .panel.callout p {
   color: #777;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
+}
+.elegir-producto .panel.callout p.title-plato {
+  color: #484848 !important;
+  font-size: 1.1rem;
 }
 .personaliza .flex label {
   width: 90%;
   padding-top: 8px;
+  font-size: 0.9rem;
+  color: #484848;
+  font-weight: bold;
 }
 .personaliza .flex select {
   width: 10%;
@@ -317,15 +348,15 @@ table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), ta
 }
 
 .elegir-producto.store-tab .content .panel h5 {
-  color: #777;
-  font-size: 0.875rem;
+  color: #484848;
+  font-size: 0.9rem;
   text-transform: uppercase;
   border-bottom: thin solid #EBF0FD;
   font-weight: bold;
 }
 .elegir-producto.store-tab .content .panel h6 {
-  color: #777;
-  font-size: 0.975rem;
+  color: #484848;
+  font-size: 0.9rem;
   border-top: thin solid #EBF0FD;
   border-bottom: thin solid #EBF0FD;
   padding: 10px 0;
@@ -334,7 +365,7 @@ table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), ta
 }
 
 .precios a {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: #777;
   font-weight: bold;
   padding: 5px 10px;
@@ -343,15 +374,30 @@ table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), ta
 .panel.callout .precios a:hover {
   color: #ED0707;
 }
-.precios a.precio {
+.precios .precio {
     background: #EBF0FD;
     border-radius: 20px;
     padding: 5px 10px;
     margin-right: 5px;
 }
-.panel.callout .precios a.precio:hover {
+.panel.callout .precios .precio:hover {
   background: #777;
   color: #EBF0FD;
+}
+
+.precios .columns {
+  position: relative;
+}
+#sel-precios {
+  position: absolute;
+  /*display: none;*/
+  margin-top: 30px;
+  z-index: 10;
+  margin-left: -33px;
+  /*width: 200px;*/
+  background: white;
+  padding: 10px;
+  border: solid thin #EBF0FD;
 }
 
 .elegir-producto .boton-naranja {
@@ -371,6 +417,9 @@ table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), ta
 .cantidad label {
   background: #EBF0FD;
   padding: 8px 10px;
+  color: #484848;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 .cantidad input {
   width: 80px;
@@ -384,7 +433,9 @@ table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), ta
   border: none;
   padding: 0;
   margin: 0 0 10px 0;
-  font-weight: normal;
+  font-weight: bold;
+  color: #484848;
+  font-size: 0.9rem;
 }
 
 .content .pagos img {
@@ -393,7 +444,8 @@ table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), ta
 }
 .content .entrega img {
   margin-right: 5px;
-  width: 35%;
+  width: 45px;
+  height: 30px;
 }
 
 .panel.callout a.btn-circ {
@@ -1331,9 +1383,6 @@ main{
 
 @media screen and (min-width: 40em) {
 
-  .content .entrega img {
-    width: 10%;
-  }
 
 .paddingMuro{
 	padding: .5em;
@@ -1433,10 +1482,6 @@ main{
 @media screen and (min-width: 62.5em) {
 header{
 	overflow: hidden;
-}
-
-.content .entrega img {
-  width: 35%;
 }
 
 #menu{

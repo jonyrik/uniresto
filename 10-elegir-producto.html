@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <script src="js/jquery.js"></script>
     <script src="js/site.js"></script>
+    <script src="js/elegir-producto.js"></script>
 
     <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js"
     type="text/javascript" charset="utf-8"></script>
@@ -156,7 +157,7 @@
                                 <div class="large-12 columns personaliza">
                                     <div class="row">
                                         <div class="large-12 columns flex">
-                                            <label style="color: #576A7D;">
+                                            <label>
                                                 Coca cola
                                             </label>
                                                 <select id="id_product_type" name="product_type" class="select-uniresto" style="width:10%">
@@ -175,7 +176,7 @@
                                 <div class="large-12 columns personaliza">
                                     <div class="row">
                                         <div class="large-12 columns flex">
-                                            <label style="color: #576A7D;">
+                                            <label>
                                                 Ensalada
                                               </label>
                                                 <select id="id_category" name="category" class="select-uniresto">
@@ -194,7 +195,14 @@
                                           <a class="precio">Carne $5</a>
                                           <a class="precio">Queso $5</a>
                                           <a class="precio">Laurel $5</a>
-                                          <a >ver</a>
+                                          <a id="ver-precios">ver <i class="fa fa-caret-down"></i></a>
+                                          <a id="ver-precios2" style="display:none;">ver <i class="fa fa-caret-up"></i> </a>
+                                          <div id="sel-precios" style="display:none;">
+                                            <label><input type="checkbox">Salsa $5</label>
+                                            <label><input type="checkbox">Queso $5</label>
+                                            <label><input type="checkbox">Laurel $5</label>
+                                            <label><input type="checkbox">Carne $5</label>
+                                          </div>
                                         </div>
                                     </div>
                                 </div>
