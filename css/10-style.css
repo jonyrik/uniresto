@@ -2134,12 +2134,23 @@ ul.ingredients-list li:before {
   display: flex;
 }
 
+.finalizar-pedido .detalle-articulo-pedido span {
+  display: table;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.ingrediente-articulo {
+  margin-bottom: 5px;
+}
+
 }
 
 @media (max-width: 400px) {
   .flex .col3 {
     display: block;
   }
+
 }
 
 
