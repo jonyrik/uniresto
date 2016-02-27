@@ -774,11 +774,20 @@ PRODUCTOS
 
 #productos .product_item .resto .local a, #restos .product_item .resto .local a {
     float: left;
-    width: 25px;
-    height: 24px;
+    /*width: 25px;
+    height: 24px;*/
     margin: 0 7px 0 0;
     display: inline-block;
     text-align: center;
+}
+
+#productos .product_item .resto .local img.delivery, #restos .product_item .resto .local img.delivery {
+  width: 40px;
+  height: 20px;
+}
+#productos .product_item .resto .local img.local, #restos .product_item .resto .local img.local {
+  width: 34px;
+  height: 22px;
 }
 
 #productos .product_item .social {
@@ -1239,7 +1248,8 @@ RESTOS
     position: relative;
 }
 #restos .product_item a.thumb {
-    width: 43%;
+    /*width: 43%;*/
+    width: 200px;
     display: block;
     position: relative;
     float: left;
@@ -1262,10 +1272,10 @@ RESTOS
     position: absolute;
     top: 5px;
     right: 5px;
-    /*width: 75px;
-    height: 75px;*/
-    width: 27%;
-    height: 27%;
+    width: 75px;
+    height: 75px;
+    /*width: 27%;
+    height: 27%;*/
     background: url(../img/local_logo.jpg);
     background-size: 100%;
     border-radius: 75px;
@@ -1336,7 +1346,7 @@ RESTOS
 }
 #restos .product_item .social a.com:after {
     content: "";
-    width: 30px;
+    width: 31px;
     height: 17px;
     background: url(../img/recomendar.png) no-repeat;
     display: block;
