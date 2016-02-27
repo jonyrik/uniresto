@@ -493,8 +493,14 @@ table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), ta
 }
 .content .entrega img {
   margin-right: 5px;
+}
+.content .entrega img.delivery {
   width: 45px;
-  height: 30px;
+  height: 22px;
+}
+.content .entrega img.local {
+  width: 34px;
+  height: 22px;
 }
 
 .panel.callout a.btn-circ {
