@@ -691,8 +691,10 @@ PRODUCTOS
     position: absolute;
     top: 5px;
     left: 5px;
-    width: 50px;
-    height: 50px;
+    /*width: 50px;
+    height: 50px;*/
+    width: 25%;
+    height: 31%;
     background: url(../img/logo-resto.jpg);
     background-size: 100%;
 }
@@ -798,7 +800,7 @@ PRODUCTOS
 
 #productos .product_item .social a.com:after {
     content: "";
-    width: 30px;
+    width: 31px;
     height: 17px;
     background: url(../img/recomendar.png) no-repeat;
     position: absolute;
@@ -884,10 +886,9 @@ PRODUCTOS
     position: absolute;
     top: 0;
     right: 10px;
-    width: 45px;
-    height: 43px;
-    background-color: transparent;
-    background-image: url(../img/label.png);
+    width: 37px;
+    height: 49px;
+    background: url(../img/label.png) no-repeat;
 }
 
 #myModal .product_item .title {
