@@ -15,16 +15,16 @@ body {
 .text-inicio{font-size: 1.1rem;color: #777;}
 
 .button-explorar{
-    
+
 margin-bottom: 20px;
 }
 
 .detail-why-register{
-    
+
 font-size: 0.9rem;
-    
+
 font-family: 'Raleway Regular';
-    
+
 color: #777;
 }
 
@@ -48,7 +48,7 @@ width: 100%!important;
 .titulo-form{
     font-family: 'Raleway Regular';
     color: #484848;
-    font-size: 2.3rem;
+    font-size: 2rem;
 }
 
 .caja-default{
@@ -58,13 +58,13 @@ width: 100%!important;
 }
 
 .input-text{
-    
+
 height: 40px!important;
-    
+
 border: 2px solid #576A7D!important;
-    
+
 box-shadow: none!important;
-    
+
 padding-left: 1rem!important;
 }
 
@@ -1356,7 +1356,7 @@ ul.combos {
     margin-bottom: 20px;
 }
 
-ul.ingredient-types, 
+ul.ingredient-types,
 .ingredients ul {
     list-style: none;
 }
@@ -1366,7 +1366,7 @@ ul.ingredient-types > li > span {
 }
 
 .ingredients ul li label {
-    margin-left: 50px; 
+    margin-left: 50px;
     font-size: 1.1em;
 }
 
@@ -1477,4 +1477,3 @@ ul.ingredients-list li:before {
     width: 36px;
     height: 36px;
 }
-
