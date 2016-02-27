@@ -703,7 +703,7 @@ PRODUCTOS
     color: #777;
     margin: 0;
 }
-#productos .product_item p.demora { 
+#productos .product_item p.demora {
     padding: 0 0 10px;
     float: left;
     font-size: 11px;
@@ -1261,8 +1261,10 @@ RESTOS
     position: absolute;
     top: 5px;
     right: 5px;
-    width: 75px;
-    height: 75px;
+    /*width: 75px;
+    height: 75px;*/
+    width: 27%;
+    height: 27%;
     background: url(../img/local_logo.jpg);
     background-size: 100%;
     border-radius: 75px;
@@ -1271,8 +1273,9 @@ RESTOS
 #restos .product_item h2.title {
     font-size: 20px;
     color: #ED0707;
+    font-weight: bold;
 }
-#restos .product_item p.demora { 
+#restos .product_item p.demora {
     color: #777;
     font-size: 15px;
     padding: 0;
@@ -1372,8 +1375,8 @@ RESTOS
 
 
 @media (max-width: 566px) {
-    
-    
+
+
     #productos .custom-columns.large-3, #restos .custom-columns.large-3 {
         width: 100%;
     }
@@ -1407,12 +1410,12 @@ RESTOS
     #productos, #restos {
         margin: 0 auto;
         width: 100%;
-        
+
     }
     #productos.tabs-content, #restos.tabs-content {
         padding: 0px 1rem !important;
     }
-    
+
     .cont-filtros { width: 100%; }
 
     #productos .custom-columns .filtros, #restos .custom-columns .filtros {
@@ -1446,7 +1449,7 @@ RESTOS
         top: 15px;
         right: 10px;
     }
-    
+
     .filtros-colap { width: 100%; }
     .filtros-colap label.ubicacion, .cont-filtros label.ubicacion {
         width: 100%;
@@ -1460,7 +1463,7 @@ RESTOS
         width: 100%;
         text-align: center;
     }
-    
+
     .cont-filtros label {
         width: 100%;
     }
@@ -1473,7 +1476,7 @@ RESTOS
         display: block;
     }
     .cont-filtros label.distancia { margin: 10px 0 0 }
-    
+
     #productos .custom-columns .filtros h2.main__title, #resos .custom-columns .filtros h2.main__title {
         margin: 10px 0 1px 15px;
     }
@@ -1490,8 +1493,8 @@ RESTOS
     .orbit-container {
         height: 350px;
     }
-    
-    
+
+
     #restos .product_item a.thumb {
         width: 100%;
         margin-top: 5px;
@@ -1507,7 +1510,7 @@ RESTOS
         position: relative;
         right: auto;
     }
-    
+
 }
 
 /*================================================ MAX-WIDTH: 1280px  =======================================================*/
@@ -1516,12 +1519,12 @@ RESTOS
 @media (max-width: 1280px) {
 
     .acciones { display: none; }
-    
+
     #productos .medium-6 {
         width: 50%;
     }
-    /* secciÃƒÆ’Ã‚Â³n Amigos */  
-    
+    /* secciÃƒÆ’Ã‚Â³n Amigos */
+
     #productos.tabs-content, #restos.tabs-content {
        padding: 0px 1rem;
     }
@@ -1547,7 +1550,7 @@ RESTOS
         padding: 0;
         margin: 0 0 0 1.5rem;
     }
-    
+
     #productos .columns, #restos .columns {
         padding-left: 0;
         display: block;
@@ -1555,14 +1558,14 @@ RESTOS
         display: flex;*/
     }
 
-    
+
     .column + .column:last-child, .columns + .column:last-child, .column + .columns:last-child, .columns + .columns:last-child {
         float: left;
     }
-    
 
-    
-        
+
+
+
 }
 
 
@@ -1582,7 +1585,7 @@ RESTOS
         margin: 0 auto;
         float: left;
     }
-    
+
     .filtros-colap, .#restos .product_item { width: 100%; }
     .cont-filtros { width: 100%; }
     .cont-filtros label {
@@ -1647,7 +1650,7 @@ RESTOS
         margin: 0 auto;
         float: left;
     }
-    
+
     .cont-filtros { width: 100%; }
     .cont-filtros label {
         width: 100%;
@@ -1684,7 +1687,7 @@ RESTOS
         margin: 0 auto;
         width: 100%;
     }
-    
+
     .filtros-colap input[readonly] { width: 100%; }
 }
 
@@ -1788,11 +1791,11 @@ RESTOS
 
 
 @media (max-width: 1024px) {
-    
+
     #productos .custom-columns.oculto .filtros, #restos .custom-columns.oculto .filtros, #productos .custom-columns .oculto, #restos .custom-columns .oculto { display: block; }
-    
+
     #productos .custom-columns .filtros, #restos .custom-columns .filtros { display: none; }
-    
+
     #restos .product_item { width: 100%; }
     .filtros-colap { width: 100%; }
 
@@ -1801,7 +1804,7 @@ RESTOS
         overflow: hidden;
         width: 100%;
     }
-    
+
     .custom-columns .cart {
         padding-bottom: 10px;
     }
