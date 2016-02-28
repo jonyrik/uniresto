@@ -180,6 +180,10 @@ table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), ta
   width: 10%;
 }
 
+.finalizar-pedido article.articulo-pedido {
+  font-size: 1rem;
+}
+
   .finalizar-pedido .accordion .accordion-navigation {
       overflow: hidden;
       padding: 6px 0 0 0;
@@ -2085,7 +2089,8 @@ ul.ingredients-list li:before {
   float: none;
 }
 .finalizar-pedido .enc.flex {
-  display: flex;
+  /*display: flex;*/
+  display: none;
 }
 .finalizar-pedido .enc > div:nth-child(1) {
     width: 9%;
@@ -2098,25 +2103,48 @@ ul.ingredients-list li:before {
 }
 .finalizar-pedido .articulo-pedido .img-art-pedido {
   display: table;
-  width: 25%;
+  /*width: 25%;*/
+  width: 100%;
   height: 25%;
   float: none;
 }
 .finalizar-pedido article > div:nth-child(2) {
-    width: 46%;
+    /*width: 46%;*/
+    width: 100%;
+    text-align: center;
     display: table;
     padding: 0px;
 }
 .finalizar-pedido article > div:nth-child(3), .finalizar-pedido article > div:nth-child(4), .finalizar-pedido article > div:nth-child(5) {
-    width: 23%;
-    float: left;
+    /*width: 23%;
+    float: left;*/
+    width: 100%;
+    float: none;
+    text-align: center;
+}
+.finalizar-pedido article > div:nth-child(3) {
+  display: none;
 }
 .finalizar-pedido .panel.callout article h4, .finalizar-pedido .panel.callout article h6 {
   font-size: 0.8rem;
 }
 .finalizar-pedido .detalle-articulo-pedido { line-height: 2; }
 
+.finalizar-pedido .articulo-pedido .cantidad {
+  display: block;
+}
 
+.finalizar-pedido .detalle-articulo-pedido span:nth-child(1) {
+  padding: 0 30px;
+}
+
+.delete-product {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.logo-resto { width: 100%; }
 
 
 .finalizar-pedido .flex .col3 {
@@ -2132,7 +2160,11 @@ ul.ingredients-list li:before {
 .finalizar-pedido .boton-naranja {
     width: 100%;
 }
-.finalizar-pedido .datos label { width: 50%; }
+.finalizar-pedido .datos label {
+  /*width: 50%; */
+  width: 36%;
+  line-height: 1.1;
+}
 .finalizar-pedido .datos .pais label, .finalizar-pedido .datos .provincia label, .finalizar-pedido .datos .direccion label {
   width: 100%;
 }
@@ -2173,7 +2205,8 @@ ul.ingredients-list li:before {
 }
 
 .finalizar-pedido .detalle-articulo-pedido span {
-  display: table;
+  /*display: table;*/
+  display: block;
   line-height: 1.2;
   margin-bottom: 5px;
 }
