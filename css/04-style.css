@@ -21,6 +21,8 @@
 body{
     font-size: 16px;
     background: #EBF0FD;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 /*Fin General*/
 
@@ -1115,7 +1117,7 @@ margin: 1em 0;
     float: left;
     width: 44%;
     padding-left: 10px;
-    border-left: medium solid #FF900B;
+    border-left: medium solid #CB0606;
 }
 
 .amigos .box h4 {
@@ -1144,7 +1146,7 @@ margin: 1em 0;
     line-height: 1.2;
     margin: 34px 0 10px;
 }
-.amigos .box p.comun span { color: #FF900B; }
+.amigos .box p.comun span { color: #CB0606; }
 
 .amigos .box select, .amigos .filtros select {
     border: medium none;
@@ -1207,10 +1209,19 @@ margin: 1em 0;
     float: left;
     font-size: 0.8rem;
     color: #959cae;
-    line-height: 2;
+    line-height: 2.4;
     margin-right: 0.5rem;
     cursor: pointer;
 }
+.amigos .box .cont-comun .botones .boton.tilde, .amigos .box .cont-comun .botones .boton.cruz {
+  font-size: 2rem;
+  line-height: 0;
+  color: #CB0606;
+}
+.amigos .box .cont-comun .botones .boton.tilde:hover, .amigos .box .cont-comun .botones .boton.cruz:hover {
+  color: #077000;
+}
+
 
 .amigos .box .cont-comun .botones .enviada {
     background: #EBF0FD;
@@ -1226,14 +1237,16 @@ margin: 1em 0;
     border-radius: 30px;
 }
 .amigos .box .cont-comun .botones .boton.enviar {
-    color: #04dd98;
+    color: #CB0606;
     border: thin solid;
     padding: 0px 1rem;
     border-radius: 10px;
     transition: ease 0.25s;
 }
 .amigos .box .cont-comun .botones .boton.enviar:hover {
-    color: #56b6bc;
+    color: white;
+    background: #077000;
+    border-color: #077000; 
 }
 
 
