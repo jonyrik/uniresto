@@ -406,6 +406,15 @@ img.perfilImg{
                                             padding: 15px 4px!important;
                                         }
 
+                                        .amigos .box .cont-comun .botones .boton {
+                                            float: left;
+                                            font-size: 0.8rem;
+                                            color: #959cae;
+                                            line-height: 2.4;
+                                            margin-right: 0.5rem;
+                                            cursor: pointer;
+                                        }
+
                                         .amigos .box .cont-comun .botones .boton.tilde, .amigos .box .cont-comun .botones .boton.cruz {
                                           font-size: 1.7rem;
                                           line-height: 0;
