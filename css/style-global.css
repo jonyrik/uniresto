@@ -1189,6 +1189,15 @@ input[type="checkbox"]:after {
     float: right !important;
 }
 
+@media (max-width: 420px) {
+
+    .foto-perfil {
+        height: 75px;
+        margin-top: 40px;
+    }
+
+}
+
 @media (max-width: 640px) {
     .margin-top-15 {
         margin-top: 15px;
@@ -1198,6 +1207,7 @@ input[type="checkbox"]:after {
         width: 90px;
         border-radius: 100%;
         border: 2px solid white;
+        margin-top: 20px;
     }
 
     .text-info-header {
