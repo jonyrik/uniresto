@@ -177,6 +177,7 @@ img.perfilImg{
                     background-repeat: no-repeat;
                     height: 150px;
                     position: relative;
+                    box-shadow: 0px -50px 110px #252525 inset;
                 }
 
                 .text-info-header{
@@ -545,10 +546,15 @@ img.perfilImg{
                                                     -o-background-size: cover;
                                                     background-size: cover;
                                                     position: relative;
+                                                    box-shadow: 0px -50px 110px #252525 inset;
+                                                }
+
+                                                .medium-offset-2 {
+                                                  padding-top: 85px;
                                                 }
 
                                                 .text-info-header{
-                                                    padding: 94px 0 0 0px;
+                                                    padding: 130px 0 0 0px;
                                                     padding-left: 0;
                                                 }
 
@@ -746,7 +752,7 @@ img.perfilImg{
                                                                     }
 
 
-                                                                    /* secciÃƒÂ³n Amigos */    
+                                                                    /* secciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n Amigos */
 
                                                                     .amigos .tabs-content { width: 100%; }
                                                                     .amigos .tabs-amigos {
@@ -910,10 +916,10 @@ margin: 1em 0;
 
 .amigos .box .cont-comun .botones .boton {
     float: left;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: #959cae;
     line-height: 2;
-    margin-right: 0.5rem;
+    /* margin-right: 0.5rem; */
     cursor: pointer;
 }
 
@@ -931,14 +937,18 @@ margin: 1em 0;
     border-radius: 30px;
 }
 .amigos .box .cont-comun .botones .boton.enviar {
-    color: #04dd98;
+    color: #ED0707;
     border: thin solid;
+    font-weight: bold;
     padding: 0px 1rem;
     border-radius: 10px;
+    font-family: Helvetica;
     transition: ease 0.25s;
 }
 .amigos .box .cont-comun .botones .boton.enviar:hover {
-    color: #56b6bc;
+    color: white;
+    background: #ED0707;
+    border: 1px solid #ED0707;
 }
 
 
@@ -996,12 +1006,12 @@ display: none;
 
 @media (max-width: 1280px) {
 
-    .acciones { display: none; }
+    .acciones {display: inline;}
 
     .amigos .medium-6 {
         width: 50%;
     }
-    /* secciÃƒÂ³n Amigos */  
+    /* secciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n Amigos */
 
     .amigos.tabs-content {
         padding: 0 0 0 1rem;
@@ -1069,7 +1079,7 @@ padding-right: 0;
     color: #a9b1bc;
 }
 .amigos .enc .btn-buscar {
-    background: url('../img/buscar.svg') no-repeat #FF900B;
+    background: url('../img/buscar.svg') no-repeat #ED0707;
     border: none;
     position: absolute;
     padding-right: 2rem;
@@ -1083,7 +1093,7 @@ padding-right: 0;
     transition: ease 0.25s;
 }
 .amigos .enc .btn-buscar:hover {
-    background: url('../img/buscar.svg') no-repeat #F4A60C;
+    background: url('../img/buscar.svg') no-repeat #ED0707;
     background-position: center;
 }
 
@@ -1298,7 +1308,7 @@ margin: 1em 0;
         width: 100%;
     }
 
-    .amigos .tabs-amigos { 
+    .amigos .tabs-amigos {
         float: none;
         margin: 1rem 1rem 0px 0px !important;
     }
@@ -1322,7 +1332,7 @@ margin: 1em 0;
         width: 100%;
     }
 
-    .amigos .enc .btn-buscar { top: 39px; }
+    .amigos .enc .btn-buscar {top: 30px;}
 
 
     .amigos .box .cont-comun .botones .enviada {
@@ -1357,11 +1367,19 @@ margin: 1em 0;
     /* Seccion Amigos */
 
 
-    .amigos .enc .btn-buscar { top: 57px; }
+    .amigos .enc .btn-buscar {top: 51px;}
 
     .amigos #panel3-4 .enc .btn-buscar {
         top: 39px;
     }
+
+}
+
+@media (max-width: 400px) {
+
+    /* Seccion Amigos */
+
+    .amigos .enc .btn-buscar {top: 31px;}
 
 }
 
@@ -1392,5 +1410,6 @@ position: absolute;bottom: 20px;}
     height: 160px;
     border-radius: 100%;
     border: 5px solid white;
-    margin-left: 50px;
+    margin: 0;
+    float: right;
 }
