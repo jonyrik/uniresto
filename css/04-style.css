@@ -405,6 +405,15 @@ img.perfilImg{
                                         .tabs-home-title > a {
                                             padding: 15px 4px!important;
                                         }
+
+                                        .amigos .box .cont-comun .botones .boton.tilde, .amigos .box .cont-comun .botones .boton.cruz {
+                                          font-size: 1.7rem;
+                                          line-height: 0;
+                                          color: #CB0606;
+                                        }
+                                        .amigos .box .cont-comun .botones .boton.tilde:hover, .amigos .box .cont-comun .botones .boton.cruz:hover {
+                                          color: #077000;
+                                        }
                                     }
 
 
@@ -1221,7 +1230,6 @@ margin: 1em 0;
 .amigos .box .cont-comun .botones .boton.tilde:hover, .amigos .box .cont-comun .botones .boton.cruz:hover {
   color: #077000;
 }
-
 
 .amigos .box .cont-comun .botones .enviada {
     background: #EBF0FD;
