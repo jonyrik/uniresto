@@ -112,6 +112,31 @@ img.perfilImg {
     margin-right: 10px;
 }
 
+/* Responsive */
+
+#menu1, #menu2 {
+  display: none;
+}
+
+.ocultar {
+  display: none;
+}
+.ver {
+  display: block;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button), .top-bar-section li.active:not(.has-form) a:not(.button) {
+  line-height: 1.6;
+}
+
+.tab-title.tabs-home-title, .tab-title.tabs-home-title.ocultar {
+  display: block;
+}
+.tab-title.tabs-home-title.ver {
+  display: block;
+}
+
+
 /*=== FIN NAVEGADOR ===*/
 
 /*=== HEADER ===*/
@@ -1195,6 +1220,57 @@ input[type="checkbox"]:after {
         height: 75px;
         margin-top: 40px;
     }
+
+}
+
+@media (max-width: 450px) {
+  /* Responsive */
+
+  #menu1.tab-title.tabs-home-title  {
+    display: block;
+    width: 100%;
+  }
+  #menu2.tab-title.tabs-home-title  {
+    width: 100%;
+  }
+  #menu1.tab-title.tabs-home-title > a, #menu2.tab-title.tabs-home-title > a {
+    background: #ED0707 !important;
+  }
+
+
+  #menu1.tab-title.tabs-home-title.ocultar, #menu2.tab-title.tabs-home-title.ocultar, .tab-title.tabs-home-title, .tab-title.tabs-home-title.ocultar {
+    display: none;
+    width: 100%;
+  }
+  #menu2.tab-title.tabs-home-title.ver, .tab-title.tabs-home-title.ver {
+    display: block;
+  }
+
+  .top-bar-section .has-dropdown > a::after {
+    border: inset 5px;
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    border-color: rgba(255, 255, 255, 1) transparent transparent transparent;
+    border-top-style: solid;
+    margin-top: -2.5px;
+    top: 1.40625rem;
+  }
+  .top-bar-section .has-dropup > a::after {
+    border: inset 5px;
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    border-color: transparent transparent rgba(255, 255, 255, 1) transparent;
+    border-top-style: solid;
+    margin-bottom: -2.5px;
+    bottom: 1.40625rem;
+    margin-right: 0.9375rem;
+position: absolute;
+right: 0;
+  }
 
 }
 

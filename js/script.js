@@ -1,5 +1,29 @@
 $(document).ready(function() {
 
+// Menu Responsive
+  var btn_menu1 = $('#menu1');
+  var btn_menu2 = $('#menu2');
+  var cont_menu = $('.tab-title.tabs-home-title[role="presentation"]');
+
+  $(btn_menu1).click(function () {
+    $(cont_menu).addClass('ver');
+    $(cont_menu).removeClass('ocultar');
+    $(this).addClass('ocultar');
+    $(this).removeClass('ver');
+    $(btn_menu2).addClass('ver');
+    $(btn_menu2).removeClass('ocultar');
+  });
+
+  $(btn_menu2).click(function () {
+    $(btn_menu1).addClass('ver');
+    $(btn_menu1).removeClass('ocultar');
+    $(this).addClass('ocultar');
+    $(this).removeClass('ver');
+    $(cont_menu).addClass('ocultar');
+    $(cont_menu).removeClass('ver');
+  });
+
+// Acciones
   var btn_acciones = $('#acciones1');
     var btn_acciones2 = $('#acciones2');
     var li_acc = $('.acciones ul');
