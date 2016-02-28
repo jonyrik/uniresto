@@ -798,6 +798,20 @@ background: #F1C055;      height: auto;      padding: 5px 15px;}
     padding: 0 !important;
   }
 
+  .caja-detail-rrhh .sin-padding {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+
+  .caja-detail-rrhh .tit-dat {
+    display: none;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+
 }
 
 @media (max-width: 400px) {
