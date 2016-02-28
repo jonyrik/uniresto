@@ -1,5 +1,39 @@
 $(document).ready(function() {
 
+  var btn_acciones = $('#acciones1');
+    var btn_acciones2 = $('#acciones2');
+    var li_acc = $('.acciones ul');
+
+
+  $(btn_acciones).click(function () {
+    $(li_acc).css('height', '400px');
+    $(this).css('display', 'none');
+    $(btn_acciones2).css('display', 'block');
+  });
+  $(btn_acciones2).click(function () {
+    $(this).css('display', 'none');
+    $(btn_acciones).css('display', 'block');
+    $(li_acc).css('height', '');
+  });
+
+  // Amigos
+    var btn_filtros = $('#btn-filtros');
+    var btn_filtros2 = $('#btn-filtros2');
+    var cont_select = $('.cont-select');
+
+    $(btn_filtros).click(function () {
+   	$(cont_select).css('display', 'table');
+        $(btn_filtros2).css('display', 'table');
+        $(this).css('display', 'none');
+   });
+
+    $(btn_filtros2).click(function () {
+   	$(cont_select).css('display', 'none');
+        $(btn_filtros).css('display', 'table');
+        $(this).css('display', 'none');
+   });
+
+
   var btn_demora1 = $('#btn-demora1');
     var btn_demora2 = $('#btn-demora2');
     var btn_demora3 = $('#btn-demora3');
