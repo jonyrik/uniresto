@@ -28,6 +28,19 @@ font-family: 'Raleway Regular';
 color: #777;
 }
 
+.top-bar-section ul li > a {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button), .top-bar-section li.active:not(.has-form) a:not(.button) {
+  line-height: 3;
+}
+
+.boton-naranja-full {
+  width: auto;
+}
+
 .boton-abajo{
 position: relative;
 margin-left: 50%;
@@ -689,6 +702,14 @@ margin: 8vh 0 0 0;
     background-color: #75757B;
 }
 
+@media screen and (max-width: 1100px) {
+
+  .boton-naranja-full {
+    width: 100%;
+  }
+
+}
+
 @media screen and (min-width: 40em) {
 .paddingMuro{
 	padding: .5em;
@@ -722,8 +743,6 @@ margin: 8vh 0 0 0;
     text-align: center;
     overflow: hidden;
 }
-
-
 
 .muro {
     position: relative;
