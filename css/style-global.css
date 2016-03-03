@@ -563,6 +563,7 @@ img.perfilImg {
     margin-bottom: 2px;
     padding: 10px;
     font-weight: bold;
+    text-align: center;
 }
 
 .store-tab .tabs {
