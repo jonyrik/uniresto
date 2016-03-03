@@ -1378,6 +1378,13 @@ right: 0;
 }
 
 @media (max-width: 1024px) {
+
+  .acciones ul {
+    height: auto !important;
+  }
+  .acciones ul li#acciones2 {
+    display: none !important;
+  }
     .margin-top-15 {
         margin-top: 15px;
     }
