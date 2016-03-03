@@ -929,8 +929,7 @@ input[type="checkbox"]:after {
 
 .wizard-steps {
     margin: 20px 10px 40px 26px;
-    padding-bottom: 50px;
-    padding: 0px;
+    padding-bottom: 10px;
     position: relative;
     clear: both;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1388,7 +1387,7 @@ right: 0;
     }
 
     .wizard-steps {
-        height: 120px;
+        /*height: 120px;*/
     }
 
     .wizard-steps a {
@@ -1429,7 +1428,6 @@ right: 0;
     .wizard-steps {
         margin: 0px 10px 40px 10px;
         padding-bottom: 50px;
-        padding: 0px;
         position: relative;
         clear: both;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
