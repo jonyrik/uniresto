@@ -544,7 +544,7 @@ PRODUCTOS
     font-size: 0.775rem;
 }
 
-#productos .custom-columns .filtros .accordion .accordion-navigation .filtro__opcion input[type="checkbox"] {
+#productos .custom-columns .filtros .accordion .accordion-navigation .filtro__opcion input[type="checkbox"], #productos .cont-filtros input[type="checkbox"] {
     margin: 0 15px 10px 0;
     visibility: hidden;
 }
@@ -969,6 +969,8 @@ PRODUCTOS
 
 .filtros-colap label.modificar {
     float: right;
+    color: #ED0707;
+    text-transform: uppercase;
 }
 .filtros-colap label.modificar .flecha {
     display: inline-block;
