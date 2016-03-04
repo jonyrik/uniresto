@@ -6,8 +6,8 @@
   <title>Uniresto</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" href="css/foundation.css" />
-  <link rel="stylesheet" type="text/css" href="css/02-style.css">
   <link rel="stylesheet" href="css/style-global.css">
+  <link rel="stylesheet" type="text/css" href="css/02-style.css">
   <link rel="stylesheet" type="text/css" href="css/toastr.css">
   <link rel="stylesheet" type="text/css" href="css/foundation-datepicker.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -24,8 +24,8 @@
   src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
   <link rel="stylesheet" type="text/css"
   href="http://js.api.here.com/v3/3.0/mapsjs-ui.css" />
-  
-  
+
+
 </head>
 <body class="reset store-view">
 <nav class="top-bar top-bar-nav" data-topbar role="navigation">
@@ -43,7 +43,7 @@
       <li><img class="perfilImg show-for-medium-up" src="img/fotoPerfil.png" alt="Foto de Perfil"></li>
       <li><p class="perfil-name-nav show-for-medium-up">Andrés Maldonado</p></li>
       <li><img class="img-post show-for-medium-up" src="img/post.svg" alt=""></li>
-      <li>        
+      <li>
         <img class="icon-nav-bar" src="img/mensajes.svg" alt="">
         <img class="icon-nav-bar" src="img/notificacion.svg" alt="">
         <img class="icon-nav-bar" src="img/engranaje.svg" alt="">
@@ -79,7 +79,7 @@
     <div class="large-12 columns store-header"></div>
   </div-->
   <div id="header" class="shop_header">
-  
+
     <img src="img/local_home_bg.jpg">
 
 
@@ -239,8 +239,12 @@ $('#mapContainer').toggle( function () {
                     </tbody>
                   </table>
                   <div class="row">
-                    <input type="submit" value="Guardar" class="button round boton-naranja" style="margin-left: 15px;">
+                    <div class="columns large-4 medium-5 small-12">
+                      <input type="submit" value="Guardar" class="button round boton-naranja">
+                    </div>
+                    <div class="columns large-4 medium-5 small-12">
                     <input type="submit" name="finish" value="Finalizar" class="button round boton-naranja">
+                  </div>
                   </div>
                 </form>
               </div>
