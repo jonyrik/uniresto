@@ -810,8 +810,8 @@ background: #F1C055;      height: auto;      padding: 5px 15px;}
     padding-right: 0.9375rem;
   }
 
-  .caja-detail-rrhh .tit-dat {
-    display: none;
+  .caja-detail-rrhh .row .columns:nth-child(4), .caja-detail-rrhh .tit-dat {
+    width: 50%;
   }
 
   .accordion-static:nth-child(2) {
@@ -826,6 +826,9 @@ background: #F1C055;      height: auto;      padding: 5px 15px;}
 
 @media (max-width: 640px) {
 
+  .caja-detail-rrhh .tit-dat {
+    display: none;
+  }
 
 }
 
