@@ -766,9 +766,9 @@ input[type="checkbox"]:after {
 
     .acciones {
         width: 85px;
-        position: fixed;
+        position: absolute;;
         z-index: 10;
-        top: 200px;
+        top: 152px;
     }
 
     .acciones ul {
