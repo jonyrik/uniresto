@@ -688,7 +688,13 @@ input[type="checkbox"]:after {
 }
 
 /*=== FIN FORM ===*/
-
+.img-tit {
+  vertical-align: top;
+  margin-right: 10px;
+}
+.default_button {
+  font-weight: bold;
+}
 /*=== BARRA ACCIONES ===*/
 
 .acciones {
@@ -973,7 +979,7 @@ input[type="checkbox"]:after {
     color: #666;
     background: #F0F0F0;
     text-decoration: none;
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+    /*text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);*/
 }
 
 .wizard-steps a:before {
