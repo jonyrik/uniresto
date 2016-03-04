@@ -144,6 +144,10 @@ a {
     box-shadow: none;
 }
 
+.datos-local .content .columns .row.min-padding {
+  margin-bottom: 80px;
+}
+
 .datos-local .accordion li.accordion-navigation, .config-gen-local .accordion li.accordion-navigation {
   margin-bottom: 2px !important;
 }
