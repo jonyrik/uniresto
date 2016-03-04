@@ -807,6 +807,10 @@ background: #F1C055;      height: auto;      padding: 5px 15px;}
     display: none;
   }
 
+  .accordion .caja-detail-rrhh .sin-padding img {
+    width: auto;
+  }
+
 }
 
 @media (max-width: 640px) {
