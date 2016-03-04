@@ -782,12 +782,12 @@ PRODUCTOS
 }
 
 #productos .product_item .resto .local img.delivery, #restos .product_item .resto .local img.delivery {
-  width: 40px;
-  height: 20px;
+  width: 35px;
+  height: 15px;
 }
 #productos .product_item .resto .local img.local, #restos .product_item .resto .local img.local {
-  width: 34px;
-  height: 22px;
+  width: 30px;
+  height: 20px;
 }
 
 #productos .product_item .social {
@@ -1300,7 +1300,8 @@ RESTOS
     color: #777;
 }
 #restos .product_item span.mundo img {
-    width: auto;
+  width: 5%;
+  margin-top: -4px;
 }
 #restos .product_item .distancia {
     font-size: 13px;
@@ -1309,6 +1310,9 @@ RESTOS
 
 #restos .product_item .resto .local {
     display: table;
+}
+#restos .local img {
+  width: 85%;
 }
 #restos .product_item .resto p {
     float: left;
@@ -1354,6 +1358,8 @@ RESTOS
     display: block;
     margin-right: 10px;
     float: left;
+    background-size: 90%;
+    margin-top: 1px;
 }
 #restos .product_item .social .btn-social {
     display: table;
