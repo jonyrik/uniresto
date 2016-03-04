@@ -685,8 +685,7 @@ PRODUCTOS
     right: 10px;
     width: 37px;
     height: 49px;
-    background-color: transparent;
-    background-image: url(../img/label.png);
+    background: url(../img/label.png) no-repeat;
 }
 #productos .product_item a.thumb .logo {
     position: absolute;
@@ -814,7 +813,7 @@ PRODUCTOS
     height: 17px;
     background: url(../img/recomendar.png) no-repeat;
     position: absolute;
-    left: 16px;
+    left: 10px;
     display: block;
     top: 0px;
 }
