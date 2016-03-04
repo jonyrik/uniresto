@@ -336,6 +336,9 @@ a {
         padding: 0.8rem 1rem;
 }
 
+.tabs-content-full .caja-default {
+  margin-bottom: 80px;
+}
 
 body {
     background:url("../img/bg.jpg");
