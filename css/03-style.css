@@ -430,26 +430,17 @@ font-size: 13px;
 }
 
 .boton-editar-personal-rrhh{
-
-padding: 10px 15px;
-
-background: #FFF;
-
-border: 1px solid #ED0707;
-
-color: #ED0707;
-
-font-size: 14px;
-
-border-radius: 25px;
-
-position: relative;
-
-margin-left: 50%;
-
-left: -67.5px;
-
-margin-top: 15px;
+  padding: 10px 15px;
+  background: #FFF;
+  border: 1px solid #ED0707;
+  color: #ED0707;
+  font-size: 14px;
+  border-radius: 25px;
+  position: relative;
+  margin-left: 50%;
+  left: -67.5px;
+  margin-top: 15px;
+  font-weight: bold;
 }
 
 .boton-editar-personal-rrhh:hover{background: #ED0707;
@@ -826,8 +817,12 @@ background: #F1C055;      height: auto;      padding: 5px 15px;}
 
 @media (max-width: 640px) {
 
-  .caja-detail-rrhh .tit-dat {
+  /*.caja-detail-rrhh .tit-dat {
     display: none;
+  }*/
+
+  .caja-detail-rrhh .row .columns:nth-child(4), .caja-detail-rrhh .tit-dat {
+    width: 100%;
   }
 
 }
