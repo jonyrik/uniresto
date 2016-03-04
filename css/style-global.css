@@ -563,7 +563,6 @@ img.perfilImg {
     margin-bottom: 2px;
     padding: 10px;
     font-weight: bold;
-    text-align: center;
 }
 
 .store-tab .tabs {
@@ -1490,6 +1489,14 @@ right: 0;
         position: absolute;
         bottom: 20px;
     }
+}
+
+@media (max-width: 640px) {
+
+  .store-tab .tabs .tab-title a {
+    text-align: center;
+  }
+
 }
 
 .panel.callout li{
