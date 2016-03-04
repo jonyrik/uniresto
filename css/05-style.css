@@ -363,6 +363,7 @@ PRODUCTOS
     border-radius: 2px;
     padding: 5px 0;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .default_button:hover {
