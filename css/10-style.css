@@ -2224,6 +2224,14 @@ ul.ingredients-list li:before {
 
 }
 
+@media (max-width: 930px) {
+  .detalle-articulo-pedido span:first-child {
+    margin-bottom: 10px;
+    display: table;
+  }
+
+}
+
 
 @media (min-width: 1024px) {
   .shop_main-data .local-detalle:last-child {
