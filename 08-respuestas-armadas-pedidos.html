@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/foundation.css" />
   <script src="js/vendor/modernizr.js"></script>
   <script src="js/jquery.js"></script>
-  <script src="js/site.js"></script>  
+  <script src="js/site.js"></script>
   <link rel="stylesheet" href="css/08-style.css">
   <link rel="stylesheet" href="css/style-global.css">
 </head>
@@ -63,7 +63,7 @@
           <p class="nombre-header-perfil">ANDRES MALDONADO</p>
           <p class="info-header-perfil">Barrio de Villa Pueyrredon</p>
         </div>
-      </div>      
+      </div>
     </div>
   </header>
 <!-- Fin Header -->
@@ -86,19 +86,12 @@
 
 
 <div class="row">
-    <div class="columns small-12 medium-7 large-12 titulo-resumen-pedidos">
-      <div class="img-top-pedido-llevar">
-        <img src="img/img-resumen-pedido.png">
-      </div>
-      <div class="columns small-3">
-        <H5><span class="titulo-pedido-llevar"> RESUMEN DE PEDIDOS</span></H5>
-      </div>
-    </div>  
+
   <div class="medium-12 columns no-padding-left store-tab">
     <!--<ul class="tabs vertical">-->
-    <ul class="mnu-resumen-pedido accordion tabs vertical" data-accordion>      
+    <ul class="mnu-resumen-pedido accordion tabs vertical" data-accordion>
       <!--<li class="tab-title active">-->
-      <li class="accordion-navigation tab-title "> 
+      <li class="accordion-navigation tab-title ">
           <a href="#panel1a">PRODUCTOS PARA LLEVAR</a>
           <div id="panel1a" class="content ">
              <div class="item-submenu">
@@ -118,32 +111,40 @@
             <div class="item-submenu">
              <a class="link-subitem" href=""><span> Solicitudes finalizadas </span></a>
             </div>
-          </div>        
+          </div>
 
       </li>
       <li class="tab-title "><a href="/store/info/"><i class="fa fa-info-circle"></i> COMER EN EL LOCAL</a></li>
     </ul>
     <div class="tabs-content">
+      <div class="content titulo-resumen-pedidos">
+        <!-- <div class="img-top-pedido-llevar">
+          <img src="img/img-resumen-pedido.png">
+        </div> -->
+        <div class="large-12 columns">
+          <h3 class="dotted-bottom"><img src="img/img-resumen-pedido.png" style="width:75px;">RESUMEN DE PEDIDOS</h3>
+        </div>
+      </div>
       <div >
 
         <div class="medium-9 large-10 columns">
           <div class="row">
               <!--<div id="demo"></div>-->
-              <div class="product_item"> 
+              <div class="product_item">
                   <div class="row">
                     <div class="columns small-12" >
                       <ul class="accordion" data-accordion="">
                         <li class="accordion-navigation active">
                           <a href="#panelContact1a" class="link columns small-9" aria-expanded="true">
                             <div class="acc-titulo-cabecera columns small-9">
-                              <span> Pedido de delivery en 
-                                <span>SPICE ART</span> 
+                              <span> Pedido de delivery en
+                                <span>SPICE ART</span>
                               </span>
-                            </div>                            
-                          </a> 
+                            </div>
+                          </a>
                           <p class="separador"></p>
-                                
-                            
+
+
                           <div id="panelContact1a" class="contenedor-articulo content active">
                             <article class="producto-delivery">
                               <span  class="text-pedido-delivery">
@@ -153,16 +154,16 @@
                               <span class="disponibilidad-producto"></span>
                               <span class="disponibilidad-producto-detalle"></span>
                             </article>
-                              
+
                             <div class="columns small-12 btns-pedido-delivery">
                               <center>
                                 <input class="aceptar-pedido columns small-3" type="button" value="Modificar Orden">
                                 <input class="cancelar-pedido columns small-3" type="button" value="Cancelar Orden">
                                 <input class="cancelar-pedido columns small-3" type="button" value="Volver">
-                              </center>                                  
-                            </div>                              
+                              </center>
+                            </div>
                           </div>
-                        </li>                        
+                        </li>
                       </ul>
                     </div>
                   </div>

@@ -129,14 +129,17 @@ width: 5px;}
 }
 
 .acciones .texto{
-    
+
 }
 
 .sin-padding{
     padding: 0!important;
 }
 
-
+.tabs-content > .content {
+  display: block;
+  width: auto;
+}
 
 .acciones ul li:nth-child(even){
 
@@ -276,7 +279,7 @@ font-size: 14px;color: white;text-shadow: 1px 0 black;padding: 0;margin: 0;margi
     margin: 0;
     padding: 0;
     border: 0;
- 
+
 }
 
 .imgPostWp{
@@ -513,7 +516,7 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
 }
 
 .acciones .texto{
-    
+
 }
 .acciones ul li:nth-child(even){
 
@@ -658,7 +661,7 @@ background-color: #344B6D!important;}
     margin: 0;
     padding: 0;
     border: 0;
- 
+
 }
 
 .imgPostWp{
@@ -791,7 +794,7 @@ ul.mnu-resumen-pedido li.active a.link-subitem {
 
 ul.mnu-resumen-pedido li.active a.link-subitem:hover {
     color: #fba94c;
-    
+
 }
 
 .mnu-resumen-pedido .accordion-navigation.active > a, .accordion dd.active > a {
@@ -804,7 +807,7 @@ ul.mnu-resumen-pedido li.active a.link-subitem:hover {
     .accordion .accordion-navigation.active > a, .accordion dd.active > a {
         background: #fba94c!important;
         color: #222222;
-    }    
+    }
 }
 .accordion .accordion-navigation > a, .accordion dd > a {
     background: gray;
@@ -842,7 +845,7 @@ ul.mnu-resumen-pedido li.active a.link-subitem:hover {
 }
 *//*
 .accordion .accordion-navigation.active > a, .accordion dd.active > a span:active {
-    
+
 }
 
 ul.mnu-resumen-pedido a {
@@ -852,7 +855,7 @@ ul.mnu-resumen-pedido a {
     font-size: 0.7em;
     margin-bottom: 2px;
     padding-left: 10px;
-}    
+}
 */
 /*/menu */
 
@@ -986,7 +989,7 @@ a.arrowRight-active {
     font-size: 13px;
     z-index: 3;
     margin-left: 8px;
-    margin-right: 8px;    
+    margin-right: 8px;
 }
 .arrowRight-active{
      position:relative;
@@ -1009,7 +1012,7 @@ a.arrowRight-active {
     position: absolute;
     display: block;
     width: 0;
-    height: 0;   
+    height: 0;
 
  }
 .arrowRight-active:after {
@@ -1017,7 +1020,7 @@ a.arrowRight-active {
     left: -15px;
     z-index: 2;
 }
- 
+
 .arrowRight-active:before {
     border-left: 16px solid #fff;
     right: -15px;
@@ -1032,14 +1035,14 @@ a.arrowRight-active {
     position: absolute;
     display: block;
     width: 0;
-    height: 0;   
+    height: 0;
  }
 .arrowRight-active span.borde-der:after {
     border-right: 16px solid #fba94c;
     left: 120px;
     z-index: 1;
 }
- 
+
 .arrowRight-active span.borde-der:before {
     border-left: 16px solid #fba94c;
     right: -17px;
@@ -1069,14 +1072,14 @@ a.arrowRight-active {
     position: absolute;
     display: block;
     width: 0;
-    height: 0;   
+    height: 0;
  }
 .arrowRight-active span.trans-izq:after {
     border-right: 16px solid #fff;
     left: -15px;
     z-index: 2;
 }
- 
+
 .arrowRight-active span.trans-izq:before {
     border-left: 16px solid #fff;
     right: -17px;
@@ -1103,14 +1106,14 @@ a.arrowRight-active {
     position: absolute;
     display: block;
     width: 0;
-    height: 0;   
+    height: 0;
  }
 .arrowRight-active span.borde-izq:after {
     border-right: 16px solid #fba94c;
     left: -18px;
     z-index: 1;
 }
- 
+
 .arrowRight-active span.borde-izq:before {
     border-left: 16px solid #fba94c;
     right: -18px;
@@ -1149,7 +1152,7 @@ a.arrowRight-noactive {
     position: absolute;
     display: block;
     width: 0;
-    height: 0;   
+    height: 0;
 
  }
 
@@ -1167,7 +1170,7 @@ a.arrowRight-noactive {
     position: absolute;
     display: block;
     width: 0;
-    height: 0;   
+    height: 0;
  }
  /*
 .arrowRight-noactive span.borde-der:after {
@@ -1175,7 +1178,7 @@ a.arrowRight-noactive {
     left: 120px;
     z-index: 1;
 }*/
- 
+
 .arrowRight-noactive span.borde-der:before {
     border-left: 16px solid #D8D8D8;
     right: -17px;
@@ -1205,14 +1208,14 @@ a.arrowRight-noactive {
     position: absolute;
     display: block;
     width: 0;
-    height: 0;   
+    height: 0;
  }
 .arrowRight-noactive span.trans-izq:after {
     border-right: 16px solid transparent;
     left: -15px;
     z-index: 2;
 }
- 
+
 .arrowRight-noactive span.trans-izq:before {
     border-left: 16px solid #fff;
     right: -17px;
@@ -1239,7 +1242,7 @@ a.arrowRight-noactive {
     position: absolute;
     display: block;
     width: 0;
-    height: 0;   
+    height: 0;
  }
  /*
 .arrowRight-noactive span.borde-izq:after {
@@ -1247,7 +1250,7 @@ a.arrowRight-noactive {
     left: -18px;
     z-index: 1;
 }*/
- 
+
 .arrowRight-noactive span.borde-izq:before {
     border-left: 16px solid #D8D8D8;
     right: -18px;
@@ -1270,7 +1273,7 @@ a.arrowRight-noactive {
     border-style: solid;
     width: 100%;
     position: relative;
-    float: left;    
+    float: left;
     margin-top: 10px;
 }
 
@@ -1282,7 +1285,7 @@ a.arrowRight-noactive {
 }
 
 .footer-resumen-articulo .usuario-resum .foto-cliente {
-    width: 60px;    
+    width: 60px;
     height: 60px;
     padding: 0px;
 }
@@ -1292,7 +1295,7 @@ a.arrowRight-noactive {
     height: 100%;
     margin-top: 15px;
     margin-left: -60px;
-    
+
 }
 
 .footer-resumen-articulo .usuario-resum .text-cliente {
@@ -1300,7 +1303,7 @@ a.arrowRight-noactive {
     position: relative;
     float: left;
     margin-left: 0px;
-    margin-top: 5px;  
+    margin-top: 5px;
     color: gray;
 }
 
@@ -1331,16 +1334,16 @@ a.arrowRight-noactive {
     width: 100%;
     height: 100%;
 
-}    
+}
 
 .footer-resumen-articulo .datos-entrega {
     position: relative;
-    float: left;  
+    float: left;
     border-left: 1px solid #ccc;
     border-left-style: solid;
     border-right: 1px solid #ccc;
-    border-right-style: solid;      
-    margin-top: 5px;  
+    border-right-style: solid;
+    margin-top: 5px;
     color: gray;
 }
 
@@ -1350,7 +1353,7 @@ a.arrowRight-noactive {
 .footer-resumen-articulo .datos-entrega .text-cliente .titulo{
     font-size: 13px;
     font-style: normal;
-   
+
 }
 
 .footer-resumen-articulo .datos-entrega .text-cliente .titulo .titulo-bold {
@@ -1368,7 +1371,7 @@ a.arrowRight-noactive {
 
 
 .footer-resumen-articulo .total {
-    margin-top: 5px;  
+    margin-top: 5px;
     color: gray;
     padding-left: 2px;
     padding-right: 5px;
@@ -1406,17 +1409,17 @@ a.arrowRight-noactive {
     .footer-resumen-articulo .total {
         padding-right: 0px;
     }
-}    
+}
 
 @media screen and (max-width: 722px) {
     .footer-resumen-articulo .usuario-resum .text-cliente {
        width: 60%!important;
-    }   
+    }
     .footer-resumen-articulo .usuario-resum .text-cliente .name {
         font-size: 15px;
-    }    
+    }
 
-    .footer-resumen-articulo .total .columns.prec {    
+    .footer-resumen-articulo .total .columns.prec {
         padding-left: 4px!important;
         padding-right: 4px!important;
     }
@@ -1440,18 +1443,18 @@ a.arrowRight-noactive {
         margin-top: 47px;
         position: relative;
         float: left;
-    }    
+    }
 
     .footer-resumen-articulo .usuario-resum .foto-cliente img {
         margin-top: 7px!important;
         margin-left: -30px!important;
-        
+
     }
     .footer-resumen-articulo .usuario-resum .text-cliente {
         margin-top: 5px!important;
     }
     /**/
-    .footer-resumen-articulo .datos-entrega {    
+    .footer-resumen-articulo .datos-entrega {
         width: 100%;
         border-left:none;
         border-right:none;
@@ -1460,10 +1463,10 @@ a.arrowRight-noactive {
 
         border-top: 1px solid #ccc;
         border-top-style: solid;
-        border-bottom: 1px solid #ccc;            
+        border-bottom: 1px solid #ccc;
         border-bottom-style: solid;
     }/**/
-        .footer-resumen-articulo .total {    
+        .footer-resumen-articulo .total {
 
         width: 100%;
     }
@@ -1479,7 +1482,7 @@ a.arrowRight-noactive {
         width:  40%;
     }
     .titulo-resumen-pedidos .small-3 {
-     width:  55%;   
+     width:  55%;
      position: relative;
      float: right;
     }
@@ -1497,7 +1500,8 @@ a.arrowRight-noactive {
     /*<menues>*/
     .store-tab .tabs .tab-title.active > a {
         background-color: #fba94c;
-        font-size: 17px;
+        font-size: 11px;
+        color: white;
     }
 
     .store-tab .tabs .tab-title.active .item-submenu a {
@@ -1536,7 +1540,7 @@ a.arrowRight-noactive {
         color: #FF900B;
         margin-right: 5px;
         font-size: 1.3em;
-    }    
+    }
     /*</menues>*/
 
     .accordion .accordion-navigation, .accordion dd{
@@ -1558,7 +1562,7 @@ a.arrowRight-noactive {
         position: relative;
         float: right;
         margin-top: 15px!important;
-        margin-bottom: 15px!important;        
+        margin-bottom: 15px!important;
     }
 
     .accordion .accordion-navigation a .mostrar-detalles .img-orden-naranja {
@@ -1572,14 +1576,14 @@ a.arrowRight-noactive {
         width: 100%;
         height: 100%;
     }
-    
+
     .accordion .accordion-navigation p .separador {
-        
+
         color: gray!important;
         position: relative!important;
         float: left!important;
         width: 100%!important;
-        border-bottom: 1px solid #ccc!important; 
+        border-bottom: 1px solid #ccc!important;
     }
 
     .accordion .accordion-navigation .contenedor-articulo {
@@ -1605,7 +1609,7 @@ a.arrowRight-noactive {
         font-size: 13px;
         z-index: 3;
         margin-left: 8px;
-        margin-right: 8px;    
+        margin-right: 8px;
     }
     .arrowRight-active{
          position:relative;
@@ -1628,7 +1632,7 @@ a.arrowRight-noactive {
         position: absolute;
         display: block;
         width: 0;
-        height: 0;   
+        height: 0;
 
      }
     .arrowRight-active:after {
@@ -1636,7 +1640,7 @@ a.arrowRight-noactive {
         left: -15px;
         z-index: 2;
     }
-     
+
     .arrowRight-active:before {
         border-left: 16px solid #fff;
         right: -15px;
@@ -1651,14 +1655,14 @@ a.arrowRight-noactive {
         position: absolute;
         display: block;
         width: 0;
-        height: 0;   
+        height: 0;
      }
     .arrowRight-active span.borde-der:after {
         border-right: 16px solid #fba94c;
         left: 120px;
         z-index: 1;
     }
-     
+
     .arrowRight-active span.borde-der:before {
         border-left: 16px solid #fba94c;
         right: -17px;
@@ -1688,14 +1692,14 @@ a.arrowRight-noactive {
         position: absolute;
         display: block;
         width: 0;
-        height: 0;   
+        height: 0;
      }
     .arrowRight-active span.trans-izq:after {
         border-right: 16px solid #fff;
         left: -15px;
         z-index: 2;
     }
-     
+
     .arrowRight-active span.trans-izq:before {
         border-left: 16px solid #fff;
         right: -17px;
@@ -1722,14 +1726,14 @@ a.arrowRight-noactive {
         position: absolute;
         display: block;
         width: 0;
-        height: 0;   
+        height: 0;
      }
     .arrowRight-active span.borde-izq:after {
         border-right: 16px solid #fba94c;
         left: -18px;
         z-index: 1;
     }
-     
+
     .arrowRight-active span.borde-izq:before {
         border-left: 16px solid #fba94c;
         right: -18px;
@@ -1768,7 +1772,7 @@ a.arrowRight-noactive {
         position: absolute;
         display: block;
         width: 0;
-        height: 0;   
+        height: 0;
 
      }
 
@@ -1786,7 +1790,7 @@ a.arrowRight-noactive {
         position: absolute;
         display: block;
         width: 0;
-        height: 0;   
+        height: 0;
      }
      /*
     .arrowRight-noactive span.borde-der:after {
@@ -1794,7 +1798,7 @@ a.arrowRight-noactive {
         left: 120px;
         z-index: 1;
     }*/
-     
+
     .arrowRight-noactive span.borde-der:before {
         border-left: 16px solid #D8D8D8;
         right: -17px;
@@ -1824,14 +1828,14 @@ a.arrowRight-noactive {
         position: absolute;
         display: block;
         width: 0;
-        height: 0;   
+        height: 0;
      }
     .arrowRight-noactive span.trans-izq:after {
         border-right: 16px solid transparent;
         left: -15px;
         z-index: 2;
     }
-     
+
     .arrowRight-noactive span.trans-izq:before {
         border-left: 16px solid #fff;
         right: -17px;
@@ -1858,7 +1862,7 @@ a.arrowRight-noactive {
         position: absolute;
         display: block;
         width: 0;
-        height: 0;   
+        height: 0;
      }
      /*
     .arrowRight-noactive span.borde-izq:after {
@@ -1866,7 +1870,7 @@ a.arrowRight-noactive {
         left: -18px;
         z-index: 1;
     }*/
-     
+
     .arrowRight-noactive span.borde-izq:before {
         border-left: 16px solid #D8D8D8;
         right: -18px;
@@ -1882,7 +1886,7 @@ a.arrowRight-noactive {
         border-style: solid;
         width: 100%;
         position: relative;
-        float: left;    
+        float: left;
         margin-top: 10px;
     }
 
@@ -1894,7 +1898,7 @@ a.arrowRight-noactive {
     }
 
     .footer-resumen-articulo .usuario-resum .foto-cliente {
-        width: 60px;    
+        width: 60px;
         height: 60px;
         padding: 0px;
     }
@@ -1904,7 +1908,7 @@ a.arrowRight-noactive {
         height: 100%;
         margin-top: 15px;
         margin-left: -60px;
-        
+
     }
 
     .footer-resumen-articulo .usuario-resum .text-cliente {
@@ -1912,7 +1916,7 @@ a.arrowRight-noactive {
         position: relative;
         float: left;
         margin-left: 0px;
-        margin-top: 5px;  
+        margin-top: 5px;
         color: gray;
     }
 
@@ -1944,16 +1948,16 @@ a.arrowRight-noactive {
         width: 100%;
         height: 100%;
 
-    }    
+    }
 
     .footer-resumen-articulo .datos-entrega {
         position: relative;
-        float: left;  
+        float: left;
         border-left: 1px solid #ccc;
         border-left-style: solid;
         border-right: 1px solid #ccc;
-        border-right-style: solid;      
-        margin-top: 5px;  
+        border-right-style: solid;
+        margin-top: 5px;
         color: gray;
     }
 
@@ -1963,7 +1967,7 @@ a.arrowRight-noactive {
     .footer-resumen-articulo .datos-entrega .text-cliente .titulo{
         font-size: 13px;
         font-style: normal;
-       
+
     }
 
     .footer-resumen-articulo .datos-entrega .text-cliente .titulo .titulo-bold {
@@ -1981,7 +1985,7 @@ a.arrowRight-noactive {
 
 
     .footer-resumen-articulo .total {
-        margin-top: 5px;  
+        margin-top: 5px;
         color: gray;
         padding-left: 2px;
         padding-right: 5px;
@@ -2011,7 +2015,7 @@ a.arrowRight-noactive {
         position: relative;
         float: right;
         font-weight: bold;
-    }    
+    }
     /*<rearmo cuadro con detalles>*/
 }
 
@@ -2025,7 +2029,7 @@ a.arrowRight-noactive {
         width:  40%!important;
     }
     .titulo-resumen-pedidos .small-3 {
-     width: 100%;   
+     width: 100%;
      position: relative;
      float: right;
     }
@@ -2042,7 +2046,7 @@ a.arrowRight-noactive {
     }
 
     .accordion dd.active > a{
-        background: #fba94c!important; 
+        background: #fba94c!important;
     }
 
 
@@ -2050,7 +2054,7 @@ a.arrowRight-noactive {
 @media only screen and (max-width: 530px) {
 
   .footer-resumen-articulo .small-1{
-    width: 100%!important;    
+    width: 100%!important;
     /*min-width: 100px;*/
   }
 }
