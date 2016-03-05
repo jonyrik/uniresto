@@ -664,17 +664,20 @@ textarea {
     padding-left: 1rem;
 }
 
+label {
+  position: relative;
+}
 input[type="checkbox"] {
     margin: 0 15px 10px 0;
     visibility: hidden;
 }
 
-input[type="checkbox"]:checked:after {
+input[type="checkbox"]:checked + label:after {
     background: #ED0707;
     border: 0;
 }
 
-input[type="checkbox"]:after {
+input[type="checkbox"] + label:after {
     content: "";
     display: block;
     width: 12px;
@@ -685,6 +688,9 @@ input[type="checkbox"]:after {
     border: 1px solid #ccc;
     background: white;
     visibility: visible;
+    position: absolute;
+    top: 2px;
+    left: -20px;
 }
 
 /*=== FIN FORM ===*/

@@ -1024,6 +1024,7 @@ PRODUCTOS
     display: table;
     width: 100%;
     margin-top: 20px;
+    margin-left: 12px;
 }
 .cont-filtros .check label {
     width: auto;
