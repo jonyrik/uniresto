@@ -906,12 +906,13 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
 }
 .single.historias .crear-galeria ul.fotos-sel li .boton.cruz, .fotos-local .crear-galeria ul.fotos-sel li .boton.cruz {
   position: absolute;
-  top: 5px;
-  right: 5px;
-  background: white;
-  border-radius: 100%;
-  cursor: pointer;
-  overflow: hidden;
+  top: 0px;
+  right: 0px; 
+  background: white none repeat scroll 0% 0%;
+  border-radius: 30px;
+  font-size: 2rem;
+  line-height: 0;
+  color: #CB0606;
   transition: ease 0.25s;
 }
 .single.historias .crear-galeria ul.fotos-sel li .boton.cruz:hover, .fotos-local .crear-galeria ul.fotos-sel li .boton.cruz:hover {
