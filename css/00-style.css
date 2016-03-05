@@ -208,6 +208,10 @@ margin: 8vh 0 0 0;
     font-size: 1.4rem;
 }
 
+.pagina-principal .title2, .pagina-principal .titleh3 {
+  color: #ED0707;
+}
+
 .destacado{
 	font-size: 1.3em;
 	line-height: 1.3em;

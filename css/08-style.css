@@ -2082,6 +2082,7 @@ article.producto-delivery {
     border-radius: 10px;
     margin: 10px;
     min-width: 103px;
+    font-weight: bold;
 }
 
 .cancelar-pedido{
@@ -2093,6 +2094,7 @@ article.producto-delivery {
     border-radius: 10px;
     margin: 10px;
     min-width: 103px;
+    font-weight: bold;
 }
 
 .cancelar-pedido:hover{
